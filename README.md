@@ -2,6 +2,10 @@
 
 A personal engineering project for studying payment correctness under concurrency, partial failure, and load. Python/FastAPI, PostgreSQL, durable workers, a controllable provider simulator, and a Stripe sandbox adapter. This project does not move real money.
 
+**Live application:** [Payment Reliability Lab on Railway](https://api-production-0213.up.railway.app/) · [Live API reference](https://api-production-0213.up.railway.app/docs)
+
+The live dashboard uses Stripe sandbox mode and requires the owner's API token for protected operations.
+
 ## Start locally
 
 Prerequisite: Docker Desktop with Compose. From this directory:
@@ -106,4 +110,4 @@ The recovery drill stops and kills **this Compose project's workers**, enqueues 
 
 ## Project status
 
-Local correctness and deployment results are recorded in `reports/RESULTS.md`. Railway account-level verification, when executed, is recorded in `reports/railway-deployment.json`. Stripe account tests are distinguished from offline SDK checks. CI execution in a connected repository and long-duration operating history require subsequent work and are not claimed by this repository.
+Local correctness and deployment results are recorded in `reports/RESULTS.md`. Railway account-level verification is recorded in `reports/railway-deployment.json`. Stripe account tests are distinguished from offline SDK checks. The [GitHub Actions correctness workflow](https://github.com/rithika20252024/fault-tolerant-payment-processing-engine-with-a-double-entry-ledger-and-reconciliation-system/actions/workflows/test.yml) runs on pushes and pull requests; its initial remote run passed. Long-duration operating history is not claimed by this repository.

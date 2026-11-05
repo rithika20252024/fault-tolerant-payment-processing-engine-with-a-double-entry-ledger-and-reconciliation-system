@@ -57,7 +57,7 @@ def main():
             stripe_status += " Webhook delivery remains unverified until the dashboard endpoint signing secret is configured."
     lines += ["## Backup restoration", "", restore_status + " See `restore-output.txt` for the drill output. The script restores into a separate database and runs semantic ledger invariants. The active database is preserved. This checks snapshot restoration, not point-in-time recovery or discovery of provider operations missing from an old snapshot.", "",
         "## Stripe account verification", "", stripe_status + " Follow `docs/stripe-development.md` for setup.", "",
-        "## Scope of the evidence", "", "The runs are short local experiments. They do not establish multi-day reliability, real users, high availability, production payment volume, or employment experience. The GitHub Actions workflow is supplied but has not been run in a connected repository.", ""]
+        "## Scope of the evidence", "", "The runs are short local experiments. They do not establish multi-day reliability, real users, high availability, production payment volume, or employment experience. The GitHub Actions correctness workflow is enabled in the connected repository; its initial remote run passed.", ""]
     (root/"RESULTS.md").write_text("\n".join(lines))
     print("Wrote reports/RESULTS.md")
 

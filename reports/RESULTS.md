@@ -146,4 +146,4 @@ An actual Stripe sandbox payment and partial refund succeeded against the deploy
 
 ## Scope of the evidence
 
-The runs are short local experiments. They do not establish multi-day reliability, real users, high availability, production payment volume, or employment experience. The GitHub Actions workflow is supplied but has not been run in a connected repository.
+The runs are short local experiments. They do not establish multi-day reliability, real users, high availability, production payment volume, or employment experience. The GitHub Actions correctness workflow is enabled in the connected repository; its initial remote run passed.
