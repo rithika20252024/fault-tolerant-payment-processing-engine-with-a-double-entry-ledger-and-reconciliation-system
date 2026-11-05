@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Payment Reliability Lab</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#e5edf6;background:#0b1420}body{max-width:1100px;margin:60px auto;padding:0 24px}h1{font-size:36px;margin-bottom:8px}p{color:#a7b6c8;line-height:1.6}.tag{font:12px monospace;letter-spacing:2px;color:#78e5b7}section{background:#132132;border:1px solid #283b51;border-radius:12px;padding:24px;margin:20px 0}input,button{padding:12px;border:1px solid #40566f;border-radius:6px;background:#0b1420;color:#e5edf6}button{cursor:pointer;background:#1b7358}input{min-width:240px}#cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.card{padding:20px;background:#132132;border-radius:8px}.card b{display:block;font-size:30px;margin-top:12px}table{width:100%;border-collapse:collapse;text-align:left;font-size:13px}td,th{padding:12px 8px;border-bottom:1px solid #283b51}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}#message{color:#78e5b7}a{color:#78e5b7}.controls{display:flex;gap:10px;flex-wrap:wrap}
+</style>
+<div class="tag">PERSONAL ENGINEERING PROJECT · SANDBOX ONLY</div>
+<h1>Payment Reliability Lab</h1>
+<p>Observe payment completion, durable jobs, and ledger correctness. All performance results from the simulator represent synthetic workloads.</p>
+<section><label>API bearer token <input id="token" type="password" autocomplete="off" placeholder="Enter your local API token"></label> <button id="connect">Connect</button><p>The token stays in this page’s memory. Refreshing clears it.</p><div id="message" role="status"></div></section>
+<div id="cards"></div>
+<section><h2>Run an operation</h2><div class="controls"><input id="amount" type="number" min="1" max="100000000" value="1500" aria-label="Amount in minor units"><button id="create">Create USD test payment</button><button id="audit">Audit ledger invariants</button><button id="reconcile">Reconcile all payments</button></div><pre id="result">Connect to inspect this instance.</pre></section>
+<section><h2>Recent payments</h2><p>Newest 20 payments. Auto-refreshes every 3 seconds after connecting.</p><div style="overflow:auto"><table><thead><tr><th>Payment</th><th>Amount</th><th>Status</th><th>Created</th></tr></thead><tbody id="rows"></tbody></table></div></section>
+<section><h2>Interpret the results</h2><p>Completion latency is measured from durable payment creation to the local success commit, including queue time. These dashboard percentiles cover all completed payments in this database; benchmark reports isolate each run. API acceptance is not payment completion.</p><a href="/docs">API reference</a></section>
+<script src="/dashboard.js" defer></script></html>

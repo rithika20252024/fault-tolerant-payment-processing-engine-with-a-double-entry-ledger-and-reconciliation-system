@@ -1,0 +1,47 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: payments
+      POSTGRES_PASSWORD: local-development-only
+      POSTGRES_DB: payments
+    ports: ["127.0.0.1:55432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U payments"]
+      interval: 2s
+      timeout: 2s
+      retries: 30
+  migrate:
+    build: .
+    command: ["python", "-m", "payments.migrate"]
+    environment: &env
+      DATABASE_URL: postgresql://payments:local-development-only@db:5432/payments
+      API_TOKEN: ${API_TOKEN:-local-demo-token-change-before-sharing}
+      PROVIDER: ${PROVIDER:-simulator}
+      STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY:-}
+      STRIPE_WEBHOOK_SECRET: ${STRIPE_WEBHOOK_SECRET:-}
+      SIMULATOR_WEBHOOK_SECRET: ${SIMULATOR_WEBHOOK_SECRET:-local-simulator-secret}
+      ENABLE_FAULTS: ${ENABLE_FAULTS:-false}
+    depends_on:
+      db: {condition: service_healthy}
+  api:
+    build: .
+    environment: *env
+    ports: ["127.0.0.1:${API_PORT:-18080}:8000"]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+  worker:
+    build: .
+    command: ["python", "-m", "payments.worker"]
+    environment: *env
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    stop_grace_period: 35s
+volumes:
+  pgdata:

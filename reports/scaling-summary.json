@@ -1,0 +1,80 @@
+[
+  {
+    "duration_seconds": 20.255241832994216,
+    "completed": 3000,
+    "failed": 0,
+    "transport_errors": 0,
+    "completed_per_second": 148.10980904277494,
+    "completion_p95_ms": 135.01099999999997,
+    "completion_p99_ms": 219.31869999999904,
+    "workers": 1,
+    "repeat": 1,
+    "raw_report": "reports/1-workers-run1.json",
+    "exit_code": 0
+  },
+  {
+    "duration_seconds": 19.891129166993778,
+    "completed": 3000,
+    "failed": 0,
+    "transport_errors": 0,
+    "completed_per_second": 150.82100039740484,
+    "completion_p95_ms": 99.01609999999998,
+    "completion_p99_ms": 172.0827299999998,
+    "workers": 4,
+    "repeat": 1,
+    "raw_report": "reports/4-workers-run1.json",
+    "exit_code": 0
+  },
+  {
+    "duration_seconds": 15.75319804099854,
+    "completed": 3000,
+    "failed": 0,
+    "transport_errors": 0,
+    "completed_per_second": 190.43752209502728,
+    "completion_p95_ms": 110.46829999999999,
+    "completion_p99_ms": 145.29793999999998,
+    "workers": 1,
+    "repeat": 2,
+    "raw_report": "reports/1-workers-run2.json",
+    "exit_code": 0
+  },
+  {
+    "duration_seconds": 16.98868691700045,
+    "completed": 3000,
+    "failed": 0,
+    "transport_errors": 0,
+    "completed_per_second": 176.58810328642426,
+    "completion_p95_ms": 96.8093,
+    "completion_p99_ms": 104.40960999999996,
+    "workers": 4,
+    "repeat": 2,
+    "raw_report": "reports/4-workers-run2.json",
+    "exit_code": 0
+  },
+  {
+    "duration_seconds": 18.23483204200602,
+    "completed": 3000,
+    "failed": 0,
+    "transport_errors": 0,
+    "completed_per_second": 164.52029791605193,
+    "completion_p95_ms": 132.07619999999994,
+    "completion_p99_ms": 180.93928999999935,
+    "workers": 1,
+    "repeat": 3,
+    "raw_report": "reports/1-workers-run3.json",
+    "exit_code": 0
+  },
+  {
+    "duration_seconds": 15.732186166998872,
+    "completed": 3000,
+    "failed": 0,
+    "transport_errors": 0,
+    "completed_per_second": 190.69187003984524,
+    "completion_p95_ms": 95.90459999999999,
+    "completion_p99_ms": 101.68807999999994,
+    "workers": 4,
+    "repeat": 3,
+    "raw_report": "reports/4-workers-run3.json",
+    "exit_code": 0
+  }
+]

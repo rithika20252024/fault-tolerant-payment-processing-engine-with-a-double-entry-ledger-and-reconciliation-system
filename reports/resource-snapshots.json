@@ -1,0 +1,74 @@
+[
+  {
+    "time": "2026-11-04T15:43:04.643763+00:00",
+    "note": "Single observation during scaling experiment; not a peak or average",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "52.11%",
+        "Container": "be3fb58fcdbad04929a3b01cda14d85cdae1be0471d232da3d97d736b2e80ced",
+        "ID": "be3fb58fcdba",
+        "MemPerc": "0.68%",
+        "MemUsage": "54.33MiB / 7.748GiB",
+        "Name": "payment-engine-api-1",
+        "NetIO": "46.1MB / 38.8MB",
+        "PIDs": "45"
+      },
+      {
+        "BlockIO": "1.31MB / 794MB",
+        "CPUPerc": "73.25%",
+        "Container": "95a70cee3c71cf243ab5c061093e784f77b70b1acfb260abd5ff908c2a2c9023",
+        "ID": "95a70cee3c71",
+        "MemPerc": "1.34%",
+        "MemUsage": "106.1MiB / 7.748GiB",
+        "Name": "payment-engine-db-1",
+        "NetIO": "127MB / 167MB",
+        "PIDs": "26"
+      },
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "11.14%",
+        "Container": "71c22d4824a2ff6c2e88942cc986297281841d5676dbde5814f5ecf92edf0e2d",
+        "ID": "71c22d4824a2",
+        "MemPerc": "0.45%",
+        "MemUsage": "35.81MiB / 7.748GiB",
+        "Name": "payment-engine-worker-1",
+        "NetIO": "116MB / 94MB",
+        "PIDs": "5"
+      },
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "10.98%",
+        "Container": "6705b9a9e7e70908ae59fa93215b2d966b452c844c31941b4a3d9046fcf528c2",
+        "ID": "6705b9a9e7e7",
+        "MemPerc": "0.43%",
+        "MemUsage": "34.42MiB / 7.748GiB",
+        "Name": "payment-engine-worker-2",
+        "NetIO": "1.96MB / 1.36MB",
+        "PIDs": "5"
+      },
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "11.04%",
+        "Container": "6a6d86ef5282feb2c352d34b465a52bf97c1a8fb7422f1205bfa5d7b7e0ee64f",
+        "ID": "6a6d86ef5282",
+        "MemPerc": "0.42%",
+        "MemUsage": "33.14MiB / 7.748GiB",
+        "Name": "payment-engine-worker-3",
+        "NetIO": "2.09MB / 1.45MB",
+        "PIDs": "5"
+      },
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "11.07%",
+        "Container": "90e1ddae8702b363cf3983074f96ed539a84a175afe6658534770675ff68b7ca",
+        "ID": "90e1ddae8702",
+        "MemPerc": "0.44%",
+        "MemUsage": "35.07MiB / 7.748GiB",
+        "Name": "payment-engine-worker-4",
+        "NetIO": "2.2MB / 1.52MB",
+        "PIDs": "5"
+      }
+    ]
+  }
+]

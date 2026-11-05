@@ -1,0 +1,13 @@
+ journal_transactions 
+----------------------
+                27401
+(1 row)
+
+ currency | imbalance 
+----------+-----------
+ usd      |         0
+(1 row)
+
+{"ok": true, "failures": {"unbalanced": [], "missing_payments": [], "refund_reservations": [], "missing_refunds": [], "invalid_postings": []}}
+Restored into separate database restore_drill_1793807251; source database untouched.
+Inspect this database, then remove it explicitly when you no longer need it.

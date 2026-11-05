@@ -1,0 +1,14 @@
+{
+  "provider": "stripe_sandbox",
+  "payment_id": "pay_53d528910291484d9085e0360c2b58cc",
+  "provider_id": "pi_3UY7qiJH6uZnSMgt0aitguDy",
+  "event_id": "evt_3UY7qiJH6uZnSMgt0oxbfIMZ",
+  "payment_status": "succeeded",
+  "webhook_delivery_verified": true,
+  "duplicate_suppressed": true,
+  "payment_journal_postings": 1,
+  "invariants_ok": true,
+  "manual_sync_used": false,
+  "verified_at": "2026-11-04T17:19:53.233907+00:00",
+  "webhook_url": "https://api-production-0213.up.railway.app/webhooks/stripe"
+}

@@ -1,0 +1,46 @@
+{
+  "verified_at": "2026-11-04T16:43:12.395581+00:00",
+  "public_api": "https://api-production-0213.up.railway.app",
+  "webhook_url": "https://api-production-0213.up.railway.app/webhooks/stripe",
+  "project_id": "3cafe3e4-0ed7-42a5-810c-e17cd0e5adec",
+  "services": {
+    "api": {
+      "id": "47aaa3b6-468f-4aaf-996d-741b46d36522",
+      "status": "SUCCESS"
+    },
+    "worker": {
+      "id": "8d726d41-00ff-4b0d-842d-0939a6073849",
+      "status": "SUCCESS"
+    }
+  },
+  "health_ok": true,
+  "unauthenticated_access_rejected": true,
+  "development_token_rejected": true,
+  "authenticated_stats_ok": true,
+  "response_cache_disabled": true,
+  "stripe_sandbox": {
+    "provider": "stripe_sandbox",
+    "payment_id": "pay_50f96473c3654c4692e574bd5c59546c",
+    "provider_id": "pi_3UY7HCJH6uZnSMgt1ifShL9w",
+    "payment_status": "succeeded",
+    "refund_status": "succeeded",
+    "invariants_ok": true,
+    "note": "This run uses explicit sync; separately verify CLI-delivered webhooks."
+  },
+  "webhook_delivery_verified": true,
+  "webhook_note": "Real Stripe Dashboard delivery and signed duplicate suppression verified without manual synchronization.",
+  "webhook_verification": {
+    "provider": "stripe_sandbox",
+    "payment_id": "pay_53d528910291484d9085e0360c2b58cc",
+    "provider_id": "pi_3UY7qiJH6uZnSMgt0aitguDy",
+    "event_id": "evt_3UY7qiJH6uZnSMgt0oxbfIMZ",
+    "payment_status": "succeeded",
+    "webhook_delivery_verified": true,
+    "duplicate_suppressed": true,
+    "payment_journal_postings": 1,
+    "invariants_ok": true,
+    "manual_sync_used": false,
+    "verified_at": "2026-11-04T17:19:53.233907+00:00",
+    "webhook_url": "https://api-production-0213.up.railway.app/webhooks/stripe"
+  }
+}

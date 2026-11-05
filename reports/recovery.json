@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-11-04T15:45:45.806831+00:00",
+  "provider": "simulator",
+  "scenario": "SIGKILL while job leased, restart, backlog drain",
+  "backlog": 100,
+  "completed": 100,
+  "recovery_seconds": 29.96349504200043,
+  "lease_seconds": 30,
+  "journal_postings": 100,
+  "provider_objects": 100,
+  "max_attempts": 2,
+  "invariants": {
+    "ok": true,
+    "failures": {
+      "unbalanced": [],
+      "missing_payments": [],
+      "refund_reservations": [],
+      "missing_refunds": [],
+      "invalid_postings": []
+    }
+  }
+}

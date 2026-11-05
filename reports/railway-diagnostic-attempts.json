@@ -1,0 +1,25 @@
+{
+  "note": "Historical diagnostic attempts from initial Stripe compatibility checks. These are separate from the successful final payment/refund smoke test. Quarantined idempotency errors require review; do not retry with a new key.",
+  "unfinished_diagnostic_jobs": [
+    {
+      "id": "create:pay_53986a7e97d946b09f4ed04558a2c69e",
+      "kind": "payment",
+      "reference": "pay_53986a7e97d946b09f4ed04558a2c69e",
+      "status": "dead",
+      "attempts": 8,
+      "last_error": "AttributeError",
+      "resolution": "Recovered after SDK conversion fix using the original provider idempotency key",
+      "payment_status": "requires_payment_method",
+      "provider_id": "pi_3UY7DcJH6uZnSMgt0ZiaQ0pk"
+    },
+    {
+      "id": "create:pay_f8e8341fd7f34a0fb7ea7b702407dfc3",
+      "kind": "payment",
+      "reference": "pay_f8e8341fd7f34a0fb7ea7b702407dfc3",
+      "status": "dead",
+      "attempts": 8,
+      "last_error": "IdempotencyError"
+    }
+  ],
+  "invariants_after_diagnostic_recovery": true
+}

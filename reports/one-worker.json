@@ -1,0 +1,3053 @@
+{
+  "run_id": "49026658871241749ae8eb7bbd73b33c",
+  "started_at": "2026-11-04T15:39:47.834274+00:00",
+  "provider": "simulator",
+  "method": "closed-loop HTTP create + polling; throughput includes polling and queueing",
+  "environment": {
+    "os": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "architecture": "arm64",
+    "cpu_count": 10,
+    "python": "3.14.7",
+    "api_url": "http://localhost:18080",
+    "worker_count_label": 1
+  },
+  "configuration": {
+    "count": 300,
+    "concurrency": 20,
+    "poll_interval_ms": 25
+  },
+  "duration_seconds": 1.3918486250040587,
+  "completed": 300,
+  "failed": 0,
+  "completed_per_second": 215.54068065349074,
+  "completion_p95_ms": 64.29805,
+  "completion_p99_ms": 84.46383999999996,
+  "acceptance_p95_ms": 63.619789301083074,
+  "invariants": {
+    "ok": true,
+    "failures": {
+      "unbalanced": [],
+      "missing_payments": [],
+      "refund_reservations": [],
+      "missing_refunds": [],
+      "invalid_postings": []
+    }
+  },
+  "database_stats_after_run": {
+    "provider": "simulator",
+    "payments": {
+      "succeeded": 300
+    },
+    "jobs": {
+      "done": 300
+    },
+    "latency": {
+      "p95_ms": 64.29804999999999,
+      "p99_ms": 84.46383999999999
+    },
+    "oldest_job_seconds": 0.0,
+    "journal_transactions": 300
+  },
+  "samples": [
+    {
+      "index": 0,
+      "id": "pay_06626f5bf34c4e9c93892fc6353c49fd",
+      "acceptance_ms": 24.812166004267056,
+      "ok": true,
+      "completion_ms": 25.571,
+      "client_observed_ms": 64.42279100156156,
+      "created_at": "2026-11-04T15:39:47.845568+00:00",
+      "completed_at": "2026-11-04T15:39:47.871139+00:00"
+    },
+    {
+      "index": 1,
+      "id": "pay_ffc273d4a10b4f01be4718e7f1e29d1e",
+      "acceptance_ms": 28.973291999136563,
+      "ok": true,
+      "completion_ms": 22.362,
+      "client_observed_ms": 69.65229200432077,
+      "created_at": "2026-11-04T15:39:47.855540+00:00",
+      "completed_at": "2026-11-04T15:39:47.877902+00:00"
+    },
+    {
+      "index": 2,
+      "id": "pay_35c82bdda67049a79d2dcb39e379cdd9",
+      "acceptance_ms": 32.11504199862247,
+      "ok": true,
+      "completion_ms": 22.716,
+      "client_observed_ms": 67.3939580010483,
+      "created_at": "2026-11-04T15:39:47.861178+00:00",
+      "completed_at": "2026-11-04T15:39:47.883894+00:00"
+    },
+    {
+      "index": 3,
+      "id": "pay_7feb9ddde5b74df08f1cda96fcc10422",
+      "acceptance_ms": 30.917959004000295,
+      "ok": true,
+      "completion_ms": 28.410999999999998,
+      "client_observed_ms": 71.15104200056521,
+      "created_at": "2026-11-04T15:39:47.862128+00:00",
+      "completed_at": "2026-11-04T15:39:47.890539+00:00"
+    },
+    {
+      "index": 4,
+      "id": "pay_cdc6c06aca374249b006be12c2df3968",
+      "acceptance_ms": 35.00733299733838,
+      "ok": true,
+      "completion_ms": 39.063,
+      "client_observed_ms": 105.10120799881406,
+      "created_at": "2026-11-04T15:39:47.865535+00:00",
+      "completed_at": "2026-11-04T15:39:47.904598+00:00"
+    },
+    {
+      "index": 5,
+      "id": "pay_3305b25a579342f4b63084247110c62d",
+      "acceptance_ms": 33.0134169998928,
+      "ok": true,
+      "completion_ms": 32.51,
+      "client_observed_ms": 101.85666700272122,
+      "created_at": "2026-11-04T15:39:47.864443+00:00",
+      "completed_at": "2026-11-04T15:39:47.896953+00:00"
+    },
+    {
+      "index": 6,
+      "id": "pay_774742cc735446b2a5f2fe8e171cec3a",
+      "acceptance_ms": 37.43087500333786,
+      "ok": true,
+      "completion_ms": 43.213,
+      "client_observed_ms": 127.01379100326449,
+      "created_at": "2026-11-04T15:39:47.867720+00:00",
+      "completed_at": "2026-11-04T15:39:47.910933+00:00"
+    },
+    {
+      "index": 7,
+      "id": "pay_4648b66a279144efbec36c4a095cdb6b",
+      "acceptance_ms": 39.04066699760733,
+      "ok": true,
+      "completion_ms": 47.701,
+      "client_observed_ms": 109.4559169941931,
+      "created_at": "2026-11-04T15:39:47.869034+00:00",
+      "completed_at": "2026-11-04T15:39:47.916735+00:00"
+    },
+    {
+      "index": 8,
+      "id": "pay_b806ecbb6af14768b08bb4e3670455f5",
+      "acceptance_ms": 44.191125001816545,
+      "ok": true,
+      "completion_ms": 59.991,
+      "client_observed_ms": 124.2050000000745,
+      "created_at": "2026-11-04T15:39:47.874215+00:00",
+      "completed_at": "2026-11-04T15:39:47.934206+00:00"
+    },
+    {
+      "index": 9,
+      "id": "pay_f50fa5c00c56459bbaf980566a5a5ef8",
+      "acceptance_ms": 38.57900000002701,
+      "ok": true,
+      "completion_ms": 52.734,
+      "client_observed_ms": 112.6020840019919,
+      "created_at": "2026-11-04T15:39:47.870662+00:00",
+      "completed_at": "2026-11-04T15:39:47.923396+00:00"
+    },
+    {
+      "index": 10,
+      "id": "pay_360809d075b74947abe1580eb8b01b25",
+      "acceptance_ms": 38.82095799781382,
+      "ok": true,
+      "completion_ms": 57.049,
+      "client_observed_ms": 105.2059579960769,
+      "created_at": "2026-11-04T15:39:47.872322+00:00",
+      "completed_at": "2026-11-04T15:39:47.929371+00:00"
+    },
+    {
+      "index": 11,
+      "id": "pay_8f88302c6ce94b57b2935227fe3ec25a",
+      "acceptance_ms": 45.32641699915985,
+      "ok": true,
+      "completion_ms": 67.423,
+      "client_observed_ms": 129.09637499979,
+      "created_at": "2026-11-04T15:39:47.876512+00:00",
+      "completed_at": "2026-11-04T15:39:47.943935+00:00"
+    },
+    {
+      "index": 12,
+      "id": "pay_c12c70d99a4741eba78a671826e2ae03",
+      "acceptance_ms": 41.03749999922002,
+      "ok": true,
+      "completion_ms": 62.75600000000001,
+      "client_observed_ms": 132.35449999774573,
+      "created_at": "2026-11-04T15:39:47.875777+00:00",
+      "completed_at": "2026-11-04T15:39:47.938533+00:00"
+    },
+    {
+      "index": 13,
+      "id": "pay_3c62a531442441428f334e463f0ee00c",
+      "acceptance_ms": 48.195625000516884,
+      "ok": true,
+      "completion_ms": 74.95,
+      "client_observed_ms": 128.4630840018508,
+      "created_at": "2026-11-04T15:39:47.879807+00:00",
+      "completed_at": "2026-11-04T15:39:47.954757+00:00"
+    },
+    {
+      "index": 14,
+      "id": "pay_4ea359b3a41642cbb802715cae6c4e35",
+      "acceptance_ms": 44.83179199451115,
+      "ok": true,
+      "completion_ms": 69.627,
+      "client_observed_ms": 158.673916994303,
+      "created_at": "2026-11-04T15:39:47.879703+00:00",
+      "completed_at": "2026-11-04T15:39:47.949330+00:00"
+    },
+    {
+      "index": 15,
+      "id": "pay_ff9c6896fef24be0b8dde39dede895f9",
+      "acceptance_ms": 46.07249999389751,
+      "ok": true,
+      "completion_ms": 79.294,
+      "client_observed_ms": 161.3097499939613,
+      "created_at": "2026-11-04T15:39:47.881331+00:00",
+      "completed_at": "2026-11-04T15:39:47.960625+00:00"
+    },
+    {
+      "index": 16,
+      "id": "pay_3bda4b50895e4dcc94c263c41feba3f1",
+      "acceptance_ms": 52.40050000429619,
+      "ok": true,
+      "completion_ms": 84.43199999999999,
+      "client_observed_ms": 177.7379999984987,
+      "created_at": "2026-11-04T15:39:47.882590+00:00",
+      "completed_at": "2026-11-04T15:39:47.967022+00:00"
+    },
+    {
+      "index": 17,
+      "id": "pay_6815b25d9cd1406fbb8f408ce9c9420a",
+      "acceptance_ms": 56.508957997721154,
+      "ok": true,
+      "completion_ms": 90.195,
+      "client_observed_ms": 183.12562499340856,
+      "created_at": "2026-11-04T15:39:47.885292+00:00",
+      "completed_at": "2026-11-04T15:39:47.975487+00:00"
+    },
+    {
+      "index": 18,
+      "id": "pay_99df4804875e46039f8276b93ebdeae8",
+      "acceptance_ms": 51.963083002192434,
+      "ok": true,
+      "completion_ms": 91.696,
+      "client_observed_ms": 203.40404099988518,
+      "created_at": "2026-11-04T15:39:47.888022+00:00",
+      "completed_at": "2026-11-04T15:39:47.979718+00:00"
+    },
+    {
+      "index": 19,
+      "id": "pay_d1f3da98ed8847409e55a5c8e71ca4f3",
+      "acceptance_ms": 44.98016699653817,
+      "ok": true,
+      "completion_ms": 87.616,
+      "client_observed_ms": 151.95637499709846,
+      "created_at": "2026-11-04T15:39:47.883995+00:00",
+      "completed_at": "2026-11-04T15:39:47.971611+00:00"
+    },
+    {
+      "index": 20,
+      "id": "pay_3efdc15667a34aebbe221c08c44519ac",
+      "acceptance_ms": 24.671874998603016,
+      "ok": true,
+      "completion_ms": 68.203,
+      "client_observed_ms": 150.80645799753256,
+      "created_at": "2026-11-04T15:39:47.915537+00:00",
+      "completed_at": "2026-11-04T15:39:47.983740+00:00"
+    },
+    {
+      "index": 21,
+      "id": "pay_09bee6b35ede4373a6e125f1c5839874",
+      "acceptance_ms": 23.93266600120114,
+      "ok": true,
+      "completion_ms": 71.571,
+      "client_observed_ms": 133.5075829993002,
+      "created_at": "2026-11-04T15:39:47.916809+00:00",
+      "completed_at": "2026-11-04T15:39:47.988380+00:00"
+    },
+    {
+      "index": 22,
+      "id": "pay_f5270a92a73d434798b57e3892e00cb4",
+      "acceptance_ms": 24.23020800051745,
+      "ok": true,
+      "completion_ms": 78.611,
+      "client_observed_ms": 118.81183299556142,
+      "created_at": "2026-11-04T15:39:47.920234+00:00",
+      "completed_at": "2026-11-04T15:39:47.998845+00:00"
+    },
+    {
+      "index": 23,
+      "id": "pay_0f820d347bdf45b08de19de803eaecba",
+      "acceptance_ms": 23.325624999415595,
+      "ok": true,
+      "completion_ms": 73.783,
+      "client_observed_ms": 128.30895800289,
+      "created_at": "2026-11-04T15:39:47.919111+00:00",
+      "completed_at": "2026-11-04T15:39:47.992894+00:00"
+    },
+    {
+      "index": 24,
+      "id": "pay_8d5b439bef9749ccbdb365e9e49e5568",
+      "acceptance_ms": 7.03008400159888,
+      "ok": true,
+      "completion_ms": 64.262,
+      "client_observed_ms": 74.99841700337129,
+      "created_at": "2026-11-04T15:39:47.939838+00:00",
+      "completed_at": "2026-11-04T15:39:48.004100+00:00"
+    },
+    {
+      "index": 25,
+      "id": "pay_d74f482e120f4211bce392186b4a2112",
+      "acceptance_ms": 11.593124996579718,
+      "ok": true,
+      "completion_ms": 64.983,
+      "client_observed_ms": 111.83854199771304,
+      "created_at": "2026-11-04T15:39:47.944584+00:00",
+      "completed_at": "2026-11-04T15:39:48.009567+00:00"
+    },
+    {
+      "index": 26,
+      "id": "pay_84dc272bd055479b876a8463162e6bbf",
+      "acceptance_ms": 15.765584001201205,
+      "ok": true,
+      "completion_ms": 66.775,
+      "client_observed_ms": 98.17470899724867,
+      "created_at": "2026-11-04T15:39:47.946904+00:00",
+      "completed_at": "2026-11-04T15:39:48.013679+00:00"
+    },
+    {
+      "index": 27,
+      "id": "pay_ceffd3ef6fac4cc9af31d6bbe44a4560",
+      "acceptance_ms": 18.475874996511266,
+      "ok": true,
+      "completion_ms": 65.988,
+      "client_observed_ms": 107.5289590007742,
+      "created_at": "2026-11-04T15:39:47.952597+00:00",
+      "completed_at": "2026-11-04T15:39:48.018585+00:00"
+    },
+    {
+      "index": 28,
+      "id": "pay_31748ba1119c4a948bc42d3a16997a77",
+      "acceptance_ms": 23.084791006112937,
+      "ok": true,
+      "completion_ms": 62.04,
+      "client_observed_ms": 137.21129100304097,
+      "created_at": "2026-11-04T15:39:47.961193+00:00",
+      "completed_at": "2026-11-04T15:39:48.023233+00:00"
+    },
+    {
+      "index": 29,
+      "id": "pay_91541a2b1f2b4621b60874cb3094ed68",
+      "acceptance_ms": 22.273916998528875,
+      "ok": true,
+      "completion_ms": 51.864,
+      "client_observed_ms": 114.23600000125589,
+      "created_at": "2026-11-04T15:39:47.976342+00:00",
+      "completed_at": "2026-11-04T15:39:48.028206+00:00"
+    },
+    {
+      "index": 30,
+      "id": "pay_929d0aa64b3143c5b76c00dd778fd679",
+      "acceptance_ms": 44.31325000041397,
+      "ok": true,
+      "completion_ms": 40.281,
+      "client_observed_ms": 127.98616700456478,
+      "created_at": "2026-11-04T15:39:48.001054+00:00",
+      "completed_at": "2026-11-04T15:39:48.041335+00:00"
+    },
+    {
+      "index": 31,
+      "id": "pay_1b29e6a10a714f088f237b1f19fdaef4",
+      "acceptance_ms": 28.35741700255312,
+      "ok": true,
+      "completion_ms": 43.97,
+      "client_observed_ms": 127.1527920034714,
+      "created_at": "2026-11-04T15:39:47.988783+00:00",
+      "completed_at": "2026-11-04T15:39:48.032753+00:00"
+    },
+    {
+      "index": 32,
+      "id": "pay_7354cd7de7454340aefd6e0a7356ed94",
+      "acceptance_ms": 31.87029199762037,
+      "ok": true,
+      "completion_ms": 42.961,
+      "client_observed_ms": 142.40699999936623,
+      "created_at": "2026-11-04T15:39:47.994112+00:00",
+      "completed_at": "2026-11-04T15:39:48.037073+00:00"
+    },
+    {
+      "index": 33,
+      "id": "pay_145d364a91c24b25a01d301941be7ef5",
+      "acceptance_ms": 36.587082999176346,
+      "ok": true,
+      "completion_ms": 44.297999999999995,
+      "client_observed_ms": 112.12924999563256,
+      "created_at": "2026-11-04T15:39:48.002916+00:00",
+      "completed_at": "2026-11-04T15:39:48.047214+00:00"
+    },
+    {
+      "index": 34,
+      "id": "pay_5593ae673f384f0fabc5b86a04b1668b",
+      "acceptance_ms": 18.53287500125589,
+      "ok": true,
+      "completion_ms": 45.448,
+      "client_observed_ms": 120.95641600171803,
+      "created_at": "2026-11-04T15:39:48.006685+00:00",
+      "completed_at": "2026-11-04T15:39:48.052133+00:00"
+    },
+    {
+      "index": 35,
+      "id": "pay_d37b1ee63d34417f949d087c64e88c8d",
+      "acceptance_ms": 16.69341700471705,
+      "ok": true,
+      "completion_ms": 48.248,
+      "client_observed_ms": 108.21491700335173,
+      "created_at": "2026-11-04T15:39:48.008848+00:00",
+      "completed_at": "2026-11-04T15:39:48.057096+00:00"
+    },
+    {
+      "index": 36,
+      "id": "pay_8cc625e0c3b64ce4866572668ac22984",
+      "acceptance_ms": 33.627791999606416,
+      "ok": true,
+      "completion_ms": 38.574,
+      "client_observed_ms": 137.32279199757613,
+      "created_at": "2026-11-04T15:39:48.025422+00:00",
+      "completed_at": "2026-11-04T15:39:48.063996+00:00"
+    },
+    {
+      "index": 37,
+      "id": "pay_41a032d6dfff417cb47da6d014d4b0bb",
+      "acceptance_ms": 53.80095900181914,
+      "ok": true,
+      "completion_ms": 30.644000000000002,
+      "client_observed_ms": 134.57045899849618,
+      "created_at": "2026-11-04T15:39:48.056277+00:00",
+      "completed_at": "2026-11-04T15:39:48.086921+00:00"
+    },
+    {
+      "index": 38,
+      "id": "pay_4df967f05e704d0ab8fe70b6e0242430",
+      "acceptance_ms": 55.54308299906552,
+      "ok": true,
+      "completion_ms": 36.966,
+      "client_observed_ms": 94.88533299736446,
+      "created_at": "2026-11-04T15:39:48.062491+00:00",
+      "completed_at": "2026-11-04T15:39:48.099457+00:00"
+    },
+    {
+      "index": 39,
+      "id": "pay_73b270d8476d4aa0bd5e2e299ff50b69",
+      "acceptance_ms": 39.53750000073342,
+      "ok": true,
+      "completion_ms": 29.221,
+      "client_observed_ms": 78.36041699920315,
+      "created_at": "2026-11-04T15:39:48.052504+00:00",
+      "completed_at": "2026-11-04T15:39:48.081725+00:00"
+    },
+    {
+      "index": 40,
+      "id": "pay_7edb42f3b58c4909aab1e06ebf95f5b4",
+      "acceptance_ms": 31.757958000525832,
+      "ok": true,
+      "completion_ms": 21.625999999999998,
+      "client_observed_ms": 76.04512500256533,
+      "created_at": "2026-11-04T15:39:48.047710+00:00",
+      "completed_at": "2026-11-04T15:39:48.069336+00:00"
+    },
+    {
+      "index": 41,
+      "id": "pay_263671ac44df4b64a64d7f8ee9931913",
+      "acceptance_ms": 24.122124996210914,
+      "ok": true,
+      "completion_ms": 27.078000000000003,
+      "client_observed_ms": 76.1374169960618,
+      "created_at": "2026-11-04T15:39:48.049182+00:00",
+      "completed_at": "2026-11-04T15:39:48.076260+00:00"
+    },
+    {
+      "index": 42,
+      "id": "pay_6841680896484948986649a9fb0a1457",
+      "acceptance_ms": 33.36454099917319,
+      "ok": true,
+      "completion_ms": 35.018,
+      "client_observed_ms": 119.12787499750266,
+      "created_at": "2026-11-04T15:39:48.057709+00:00",
+      "completed_at": "2026-11-04T15:39:48.092727+00:00"
+    },
+    {
+      "index": 43,
+      "id": "pay_eca6ec4356764eeda3cd7330056b273f",
+      "acceptance_ms": 35.216541997215245,
+      "ok": true,
+      "completion_ms": 40.957,
+      "client_observed_ms": 82.29483399918536,
+      "created_at": "2026-11-04T15:39:48.063996+00:00",
+      "completed_at": "2026-11-04T15:39:48.104953+00:00"
+    },
+    {
+      "index": 44,
+      "id": "pay_ea97e1109c1040288d5e95cf7d783731",
+      "acceptance_ms": 33.128334005596116,
+      "ok": true,
+      "completion_ms": 41.15,
+      "client_observed_ms": 88.69812500051921,
+      "created_at": "2026-11-04T15:39:48.068527+00:00",
+      "completed_at": "2026-11-04T15:39:48.109677+00:00"
+    },
+    {
+      "index": 45,
+      "id": "pay_f0a839d7ffb84ef389cf10902e239b9d",
+      "acceptance_ms": 34.86466700269375,
+      "ok": true,
+      "completion_ms": 42.729000000000006,
+      "client_observed_ms": 131.42966700252146,
+      "created_at": "2026-11-04T15:39:48.071580+00:00",
+      "completed_at": "2026-11-04T15:39:48.114309+00:00"
+    },
+    {
+      "index": 46,
+      "id": "pay_b49bf9d53f9f40528ec7acbf6cf19995",
+      "acceptance_ms": 54.206875000090804,
+      "ok": true,
+      "completion_ms": 30.864,
+      "client_observed_ms": 89.72362499480369,
+      "created_at": "2026-11-04T15:39:48.093264+00:00",
+      "completed_at": "2026-11-04T15:39:48.124128+00:00"
+    },
+    {
+      "index": 47,
+      "id": "pay_56d6881a4148494d82d97e4d9087affd",
+      "acceptance_ms": 36.20179099380039,
+      "ok": true,
+      "completion_ms": 40.254,
+      "client_observed_ms": 117.77099999744678,
+      "created_at": "2026-11-04T15:39:48.078328+00:00",
+      "completed_at": "2026-11-04T15:39:48.118582+00:00"
+    },
+    {
+      "index": 48,
+      "id": "pay_2c035413edc34cb18ac92d5ce439109c",
+      "acceptance_ms": 33.231582994631026,
+      "ok": true,
+      "completion_ms": 32.405,
+      "client_observed_ms": 93.93262499361299,
+      "created_at": "2026-11-04T15:39:48.096560+00:00",
+      "completed_at": "2026-11-04T15:39:48.128965+00:00"
+    },
+    {
+      "index": 49,
+      "id": "pay_fb8e471a2c8d4c8491166f1c702b0315",
+      "acceptance_ms": 78.18937500269385,
+      "ok": true,
+      "completion_ms": 32.181000000000004,
+      "client_observed_ms": 196.0870420007268,
+      "created_at": "2026-11-04T15:39:48.151323+00:00",
+      "completed_at": "2026-11-04T15:39:48.183504+00:00"
+    },
+    {
+      "index": 50,
+      "id": "pay_e3e7762847af4fa5a4803e318b20762b",
+      "acceptance_ms": 29.276834000484087,
+      "ok": true,
+      "completion_ms": 27.508000000000003,
+      "client_observed_ms": 63.283166993642226,
+      "created_at": "2026-11-04T15:39:48.107025+00:00",
+      "completed_at": "2026-11-04T15:39:48.134533+00:00"
+    },
+    {
+      "index": 51,
+      "id": "pay_10fd4ad73cdb4565b595a5d85c5ec27c",
+      "acceptance_ms": 37.6134580001235,
+      "ok": true,
+      "completion_ms": 21.227,
+      "client_observed_ms": 80.86824999918463,
+      "created_at": "2026-11-04T15:39:48.118751+00:00",
+      "completed_at": "2026-11-04T15:39:48.139978+00:00"
+    },
+    {
+      "index": 52,
+      "id": "pay_f1a2435093e44e538309bdbad1c24c57",
+      "acceptance_ms": 36.8774580056197,
+      "ok": true,
+      "completion_ms": 26.487000000000002,
+      "client_observed_ms": 130.8132080012001,
+      "created_at": "2026-11-04T15:39:48.122040+00:00",
+      "completed_at": "2026-11-04T15:39:48.148527+00:00"
+    },
+    {
+      "index": 53,
+      "id": "pay_459f770cc83d499092041f0aa04f6c78",
+      "acceptance_ms": 29.6428330038907,
+      "ok": true,
+      "completion_ms": 25.463,
+      "client_observed_ms": 98.45608300383901,
+      "created_at": "2026-11-04T15:39:48.119095+00:00",
+      "completed_at": "2026-11-04T15:39:48.144558+00:00"
+    },
+    {
+      "index": 54,
+      "id": "pay_9fdc56d8beb5454d9d3927d7381f8216",
+      "acceptance_ms": 37.11541600205237,
+      "ok": true,
+      "completion_ms": 30.525,
+      "client_observed_ms": 127.75737500487594,
+      "created_at": "2026-11-04T15:39:48.127019+00:00",
+      "completed_at": "2026-11-04T15:39:48.157544+00:00"
+    },
+    {
+      "index": 55,
+      "id": "pay_25a3c74c583d4815a4fdfd2bf775a22b",
+      "acceptance_ms": 40.595165999548044,
+      "ok": true,
+      "completion_ms": 32.635,
+      "client_observed_ms": 129.45154100452783,
+      "created_at": "2026-11-04T15:39:48.138485+00:00",
+      "completed_at": "2026-11-04T15:39:48.171120+00:00"
+    },
+    {
+      "index": 56,
+      "id": "pay_62fdd907428547f183bda4da23ae7525",
+      "acceptance_ms": 25.727374995767605,
+      "ok": true,
+      "completion_ms": 26.962,
+      "client_observed_ms": 53.34795899398159,
+      "created_at": "2026-11-04T15:39:48.126157+00:00",
+      "completed_at": "2026-11-04T15:39:48.153119+00:00"
+    },
+    {
+      "index": 57,
+      "id": "pay_14e0bce4b40649f386a44c587b719983",
+      "acceptance_ms": 34.882708998338785,
+      "ok": true,
+      "completion_ms": 31.092000000000002,
+      "client_observed_ms": 91.2365000040154,
+      "created_at": "2026-11-04T15:39:48.136177+00:00",
+      "completed_at": "2026-11-04T15:39:48.167269+00:00"
+    },
+    {
+      "index": 58,
+      "id": "pay_f6f11f72c1cf4103bfb97e776f75c701",
+      "acceptance_ms": 28.459500004828442,
+      "ok": true,
+      "completion_ms": 32.578,
+      "client_observed_ms": 79.98324999789475,
+      "created_at": "2026-11-04T15:39:48.129989+00:00",
+      "completed_at": "2026-11-04T15:39:48.162567+00:00"
+    },
+    {
+      "index": 59,
+      "id": "pay_43528fbc602543cebc1f45883fd9b31e",
+      "acceptance_ms": 33.388582996849436,
+      "ok": true,
+      "completion_ms": 35.251,
+      "client_observed_ms": 152.88712499750545,
+      "created_at": "2026-11-04T15:39:48.140420+00:00",
+      "completed_at": "2026-11-04T15:39:48.175671+00:00"
+    },
+    {
+      "index": 60,
+      "id": "pay_d773e82aa59f453babb187b00bcd6c87",
+      "acceptance_ms": 50.08712499693502,
+      "ok": true,
+      "completion_ms": 26.554000000000002,
+      "client_observed_ms": 81.02545799920335,
+      "created_at": "2026-11-04T15:39:48.162987+00:00",
+      "completed_at": "2026-11-04T15:39:48.189541+00:00"
+    },
+    {
+      "index": 61,
+      "id": "pay_3639ad7c69d94676a311aa7c2681891a",
+      "acceptance_ms": 25.51891600160161,
+      "ok": true,
+      "completion_ms": 29.703,
+      "client_observed_ms": 71.97554100275738,
+      "created_at": "2026-11-04T15:39:48.149830+00:00",
+      "completed_at": "2026-11-04T15:39:48.179533+00:00"
+    },
+    {
+      "index": 62,
+      "id": "pay_878a1ad754094a2a8010d92b25d0c3a1",
+      "acceptance_ms": 36.38370800035773,
+      "ok": true,
+      "completion_ms": 29.742,
+      "client_observed_ms": 222.90549999888754,
+      "created_at": "2026-11-04T15:39:48.165441+00:00",
+      "completed_at": "2026-11-04T15:39:48.195183+00:00"
+    },
+    {
+      "index": 63,
+      "id": "pay_77ae2a555d534ca7801d7bad3d5e1847",
+      "acceptance_ms": 54.14516699966043,
+      "ok": true,
+      "completion_ms": 43.836,
+      "client_observed_ms": 112.86016699887114,
+      "created_at": "2026-11-04T15:39:48.183571+00:00",
+      "completed_at": "2026-11-04T15:39:48.227407+00:00"
+    },
+    {
+      "index": 64,
+      "id": "pay_55093a0417e04732b281e06a61cd763f",
+      "acceptance_ms": 36.989542000810616,
+      "ok": true,
+      "completion_ms": 32.016999999999996,
+      "client_observed_ms": 76.68095800181618,
+      "created_at": "2026-11-04T15:39:48.175658+00:00",
+      "completed_at": "2026-11-04T15:39:48.207675+00:00"
+    },
+    {
+      "index": 65,
+      "id": "pay_22dcbf99126a4d118526c9c832b8dc4a",
+      "acceptance_ms": 38.04854200279806,
+      "ok": true,
+      "completion_ms": 36.16,
+      "client_observed_ms": 173.94441700162133,
+      "created_at": "2026-11-04T15:39:48.178201+00:00",
+      "completed_at": "2026-11-04T15:39:48.214361+00:00"
+    },
+    {
+      "index": 66,
+      "id": "pay_80bf4cb09f464641989ac99a622653cc",
+      "acceptance_ms": 28.991374994802754,
+      "ok": true,
+      "completion_ms": 27.0,
+      "client_observed_ms": 58.703458998934366,
+      "created_at": "2026-11-04T15:39:48.173783+00:00",
+      "completed_at": "2026-11-04T15:39:48.200783+00:00"
+    },
+    {
+      "index": 67,
+      "id": "pay_d2c85590a2c14cd79b3eabf0415665cf",
+      "acceptance_ms": 31.614833998901304,
+      "ok": true,
+      "completion_ms": 37.767,
+      "client_observed_ms": 78.55145900248317,
+      "created_at": "2026-11-04T15:39:48.183085+00:00",
+      "completed_at": "2026-11-04T15:39:48.220852+00:00"
+    },
+    {
+      "index": 68,
+      "id": "pay_0784a5dc4f23401fac5eb8e407ab299c",
+      "acceptance_ms": 48.92233300051885,
+      "ok": true,
+      "completion_ms": 44.057,
+      "client_observed_ms": 111.66191700613126,
+      "created_at": "2026-11-04T15:39:48.205107+00:00",
+      "completed_at": "2026-11-04T15:39:48.249164+00:00"
+    },
+    {
+      "index": 69,
+      "id": "pay_40bd874cabe14c918f26c732fd0b6713",
+      "acceptance_ms": 39.04708300251514,
+      "ok": true,
+      "completion_ms": 36.653999999999996,
+      "client_observed_ms": 162.0784580009058,
+      "created_at": "2026-11-04T15:39:48.198371+00:00",
+      "completed_at": "2026-11-04T15:39:48.235025+00:00"
+    },
+    {
+      "index": 70,
+      "id": "pay_058a471117de44de8db45efde1e1fafb",
+      "acceptance_ms": 66.78900000406429,
+      "ok": true,
+      "completion_ms": 38.159,
+      "client_observed_ms": 171.15641599957598,
+      "created_at": "2026-11-04T15:39:48.218764+00:00",
+      "completed_at": "2026-11-04T15:39:48.256923+00:00"
+    },
+    {
+      "index": 71,
+      "id": "pay_d6f7fd41396345698bc9d9d7bde14dd3",
+      "acceptance_ms": 31.18995800468838,
+      "ok": true,
+      "completion_ms": 42.461,
+      "client_observed_ms": 78.24937500117812,
+      "created_at": "2026-11-04T15:39:48.199675+00:00",
+      "completed_at": "2026-11-04T15:39:48.242136+00:00"
+    },
+    {
+      "index": 72,
+      "id": "pay_2c928f4e4ae94d2c93442778a70702a2",
+      "acceptance_ms": 146.6271660028724,
+      "ok": true,
+      "completion_ms": 47.019,
+      "client_observed_ms": 196.94795800023712,
+      "created_at": "2026-11-04T15:39:48.322390+00:00",
+      "completed_at": "2026-11-04T15:39:48.369409+00:00"
+    },
+    {
+      "index": 73,
+      "id": "pay_b6e2cfb170ad4bea9c12e086074190af",
+      "acceptance_ms": 38.91299999668263,
+      "ok": true,
+      "completion_ms": 42.107,
+      "client_observed_ms": 117.89712499739835,
+      "created_at": "2026-11-04T15:39:48.221692+00:00",
+      "completed_at": "2026-11-04T15:39:48.263799+00:00"
+    },
+    {
+      "index": 74,
+      "id": "pay_da2df122919348a69dcaf0d823f82f5a",
+      "acceptance_ms": 46.422416002315,
+      "ok": true,
+      "completion_ms": 38.580000000000005,
+      "client_observed_ms": 179.72095800359966,
+      "created_at": "2026-11-04T15:39:48.233263+00:00",
+      "completed_at": "2026-11-04T15:39:48.271843+00:00"
+    },
+    {
+      "index": 75,
+      "id": "pay_fa570efa067447f7a0adca825f949a3f",
+      "acceptance_ms": 58.83312500372995,
+      "ok": true,
+      "completion_ms": 32.018,
+      "client_observed_ms": 103.71624999970663,
+      "created_at": "2026-11-04T15:39:48.249172+00:00",
+      "completed_at": "2026-11-04T15:39:48.281190+00:00"
+    },
+    {
+      "index": 76,
+      "id": "pay_c637ba39281d401db3a6b71ad0d5da2b",
+      "acceptance_ms": 113.86333400150761,
+      "ok": true,
+      "completion_ms": 52.107,
+      "client_observed_ms": 170.0138340020203,
+      "created_at": "2026-11-04T15:39:48.301742+00:00",
+      "completed_at": "2026-11-04T15:39:48.353849+00:00"
+    },
+    {
+      "index": 77,
+      "id": "pay_162e95b519e141cfaeaa2489eb5c9046",
+      "acceptance_ms": 86.7642919984064,
+      "ok": true,
+      "completion_ms": 42.974,
+      "client_observed_ms": 142.96058399486355,
+      "created_at": "2026-11-04T15:39:48.281698+00:00",
+      "completed_at": "2026-11-04T15:39:48.324672+00:00"
+    },
+    {
+      "index": 78,
+      "id": "pay_fa97d8b25f884b708ab9007eed97c974",
+      "acceptance_ms": 50.895583000965416,
+      "ok": true,
+      "completion_ms": 41.778000000000006,
+      "client_observed_ms": 123.91854200541275,
+      "created_at": "2026-11-04T15:39:48.261133+00:00",
+      "completed_at": "2026-11-04T15:39:48.302911+00:00"
+    },
+    {
+      "index": 79,
+      "id": "pay_7a33068ffa8e4592bdc00b1ab48cda3f",
+      "acceptance_ms": 134.35770800424507,
+      "ok": true,
+      "completion_ms": 39.272,
+      "client_observed_ms": 191.36083299963502,
+      "created_at": "2026-11-04T15:39:48.341218+00:00",
+      "completed_at": "2026-11-04T15:39:48.380490+00:00"
+    },
+    {
+      "index": 80,
+      "id": "pay_dfcd01102a6943689de7e4bd6c251a57",
+      "acceptance_ms": 37.314000001060776,
+      "ok": true,
+      "completion_ms": 36.653,
+      "client_observed_ms": 109.46991600212641,
+      "created_at": "2026-11-04T15:39:48.254274+00:00",
+      "completed_at": "2026-11-04T15:39:48.290927+00:00"
+    },
+    {
+      "index": 81,
+      "id": "pay_c6852a8c81914b70b933d3c98d884e89",
+      "acceptance_ms": 68.02779199642828,
+      "ok": true,
+      "completion_ms": 50.824,
+      "client_observed_ms": 161.15083299519029,
+      "created_at": "2026-11-04T15:39:48.285742+00:00",
+      "completed_at": "2026-11-04T15:39:48.336566+00:00"
+    },
+    {
+      "index": 82,
+      "id": "pay_56eb87618413493685570d3c69796914",
+      "acceptance_ms": 52.86320900631836,
+      "ok": true,
+      "completion_ms": 34.623,
+      "client_observed_ms": 146.71991700015496,
+      "created_at": "2026-11-04T15:39:48.278458+00:00",
+      "completed_at": "2026-11-04T15:39:48.313081+00:00"
+    },
+    {
+      "index": 83,
+      "id": "pay_04f867de7e8c40c988a9c5f22c6cb560",
+      "acceptance_ms": 119.52804100292269,
+      "ok": true,
+      "completion_ms": 32.766000000000005,
+      "client_observed_ms": 183.8887500052806,
+      "created_at": "2026-11-04T15:39:48.359073+00:00",
+      "completed_at": "2026-11-04T15:39:48.391839+00:00"
+    },
+    {
+      "index": 84,
+      "id": "pay_90bc140cee70428a97b44dba8ee85f06",
+      "acceptance_ms": 54.603832999418955,
+      "ok": true,
+      "completion_ms": 49.297,
+      "client_observed_ms": 112.30383299698588,
+      "created_at": "2026-11-04T15:39:48.296078+00:00",
+      "completed_at": "2026-11-04T15:39:48.345375+00:00"
+    },
+    {
+      "index": 85,
+      "id": "pay_f94a1950b64a485a9499fb3f2d04930e",
+      "acceptance_ms": 99.57108299568063,
+      "ok": true,
+      "completion_ms": 36.033,
+      "client_observed_ms": 161.31791699444875,
+      "created_at": "2026-11-04T15:39:48.350184+00:00",
+      "completed_at": "2026-11-04T15:39:48.386217+00:00"
+    },
+    {
+      "index": 86,
+      "id": "pay_cd69fa6e8fed4e7fb23f86ef7827055c",
+      "acceptance_ms": 49.102625001978595,
+      "ok": true,
+      "completion_ms": 51.325,
+      "client_observed_ms": 147.81475000199862,
+      "created_at": "2026-11-04T15:39:48.310266+00:00",
+      "completed_at": "2026-11-04T15:39:48.361591+00:00"
+    },
+    {
+      "index": 87,
+      "id": "pay_4b65f85850774fe9a6a7eb61d9e24124",
+      "acceptance_ms": 98.07895800622646,
+      "ok": true,
+      "completion_ms": 31.578000000000003,
+      "client_observed_ms": 131.1893330057501,
+      "created_at": "2026-11-04T15:39:48.365590+00:00",
+      "completed_at": "2026-11-04T15:39:48.397168+00:00"
+    },
+    {
+      "index": 88,
+      "id": "pay_6a8baea01a8f452fb9f060b1bd04aaa0",
+      "acceptance_ms": 45.85904200212099,
+      "ok": true,
+      "completion_ms": 37.703,
+      "client_observed_ms": 116.31537500215927,
+      "created_at": "2026-11-04T15:39:48.337142+00:00",
+      "completed_at": "2026-11-04T15:39:48.374845+00:00"
+    },
+    {
+      "index": 89,
+      "id": "pay_74aa1c6bb14844569aa10a63098722a8",
+      "acceptance_ms": 69.77537499915343,
+      "ok": true,
+      "completion_ms": 29.076,
+      "client_observed_ms": 111.76549999800045,
+      "created_at": "2026-11-04T15:39:48.373605+00:00",
+      "completed_at": "2026-11-04T15:39:48.402681+00:00"
+    },
+    {
+      "index": 90,
+      "id": "pay_35cd5778a6c84c228ac3b73c834895bb",
+      "acceptance_ms": 76.92754099844024,
+      "ok": true,
+      "completion_ms": 24.251,
+      "client_observed_ms": 117.90137500065612,
+      "created_at": "2026-11-04T15:39:48.388929+00:00",
+      "completed_at": "2026-11-04T15:39:48.413180+00:00"
+    },
+    {
+      "index": 91,
+      "id": "pay_b7d4c9251c14413ab75c6aff16a9b5e2",
+      "acceptance_ms": 73.62799999827985,
+      "ok": true,
+      "completion_ms": 33.139,
+      "client_observed_ms": 112.81245799909811,
+      "created_at": "2026-11-04T15:39:48.394947+00:00",
+      "completed_at": "2026-11-04T15:39:48.428086+00:00"
+    },
+    {
+      "index": 92,
+      "id": "pay_12748457cc8b4b03b283898fa189b44b",
+      "acceptance_ms": 63.78758400387596,
+      "ok": true,
+      "completion_ms": 28.454,
+      "client_observed_ms": 114.61016700195614,
+      "created_at": "2026-11-04T15:39:48.389732+00:00",
+      "completed_at": "2026-11-04T15:39:48.418186+00:00"
+    },
+    {
+      "index": 93,
+      "id": "pay_5de8c3882f3c45649a434c7e7befa365",
+      "acceptance_ms": 51.20554200402694,
+      "ok": true,
+      "completion_ms": 26.317,
+      "client_observed_ms": 84.23070899880258,
+      "created_at": "2026-11-04T15:39:48.381974+00:00",
+      "completed_at": "2026-11-04T15:39:48.408291+00:00"
+    },
+    {
+      "index": 94,
+      "id": "pay_a0da1671c6194f2ba901139e459d6356",
+      "acceptance_ms": 62.70275000133552,
+      "ok": true,
+      "completion_ms": 33.826,
+      "client_observed_ms": 170.23866600356996,
+      "created_at": "2026-11-04T15:39:48.398799+00:00",
+      "completed_at": "2026-11-04T15:39:48.432625+00:00"
+    },
+    {
+      "index": 95,
+      "id": "pay_131aaeeb278c4d9eaf16ae4a8ef5abfe",
+      "acceptance_ms": 50.405124995450024,
+      "ok": true,
+      "completion_ms": 30.128,
+      "client_observed_ms": 88.73491599661065,
+      "created_at": "2026-11-04T15:39:48.393532+00:00",
+      "completed_at": "2026-11-04T15:39:48.423660+00:00"
+    },
+    {
+      "index": 96,
+      "id": "pay_365438bf3efd4fa385605b4ca3b975ce",
+      "acceptance_ms": 57.68624999473104,
+      "ok": true,
+      "completion_ms": 35.55500000000001,
+      "client_observed_ms": 140.65179199678823,
+      "created_at": "2026-11-04T15:39:48.407090+00:00",
+      "completed_at": "2026-11-04T15:39:48.442645+00:00"
+    },
+    {
+      "index": 97,
+      "id": "pay_5a099cc5fb37462f8a64312e63375b14",
+      "acceptance_ms": 46.14170800050488,
+      "ok": true,
+      "completion_ms": 33.574,
+      "client_observed_ms": 99.94329199980712,
+      "created_at": "2026-11-04T15:39:48.404727+00:00",
+      "completed_at": "2026-11-04T15:39:48.438301+00:00"
+    },
+    {
+      "index": 98,
+      "id": "pay_8e75fc5c159745c1baa9abd25ec932be",
+      "acceptance_ms": 44.45487499469891,
+      "ok": true,
+      "completion_ms": 37.993,
+      "client_observed_ms": 83.0851669961703,
+      "created_at": "2026-11-04T15:39:48.409635+00:00",
+      "completed_at": "2026-11-04T15:39:48.447628+00:00"
+    },
+    {
+      "index": 99,
+      "id": "pay_b3ad1a224e494c8780f4c2a7ab101123",
+      "acceptance_ms": 53.57808400003705,
+      "ok": true,
+      "completion_ms": 36.601,
+      "client_observed_ms": 159.0580000047339,
+      "created_at": "2026-11-04T15:39:48.424871+00:00",
+      "completed_at": "2026-11-04T15:39:48.461472+00:00"
+    },
+    {
+      "index": 100,
+      "id": "pay_10c3c0332e2d4eaaac89815ed804f6a3",
+      "acceptance_ms": 40.80854100175202,
+      "ok": true,
+      "completion_ms": 32.245000000000005,
+      "client_observed_ms": 77.26895799714839,
+      "created_at": "2026-11-04T15:39:48.420126+00:00",
+      "completed_at": "2026-11-04T15:39:48.452371+00:00"
+    },
+    {
+      "index": 101,
+      "id": "pay_5ba85d7c493d463080d674a430376ce7",
+      "acceptance_ms": 41.849125002045184,
+      "ok": true,
+      "completion_ms": 34.64,
+      "client_observed_ms": 76.85162499547005,
+      "created_at": "2026-11-04T15:39:48.422852+00:00",
+      "completed_at": "2026-11-04T15:39:48.457492+00:00"
+    },
+    {
+      "index": 102,
+      "id": "pay_fb82e1fc93544d06822e2434695743c7",
+      "acceptance_ms": 65.63304099836387,
+      "ok": true,
+      "completion_ms": 27.136,
+      "client_observed_ms": 141.3221250040806,
+      "created_at": "2026-11-04T15:39:48.454208+00:00",
+      "completed_at": "2026-11-04T15:39:48.481344+00:00"
+    },
+    {
+      "index": 103,
+      "id": "pay_79557b1073dc4c0c98cdacf3e430a280",
+      "acceptance_ms": 48.8006250016042,
+      "ok": true,
+      "completion_ms": 26.315,
+      "client_observed_ms": 78.03987499937648,
+      "created_at": "2026-11-04T15:39:48.451082+00:00",
+      "completed_at": "2026-11-04T15:39:48.477397+00:00"
+    },
+    {
+      "index": 104,
+      "id": "pay_f5a9d4623d3945debc5a8d966182a252",
+      "acceptance_ms": 40.24779100291198,
+      "ok": true,
+      "completion_ms": 27.09,
+      "client_observed_ms": 70.31224999809638,
+      "created_at": "2026-11-04T15:39:48.446839+00:00",
+      "completed_at": "2026-11-04T15:39:48.473929+00:00"
+    },
+    {
+      "index": 105,
+      "id": "pay_dad37019ea1341c6ac8a2acf193ac96a",
+      "acceptance_ms": 29.956500002299435,
+      "ok": true,
+      "completion_ms": 21.497,
+      "client_observed_ms": 60.11504100024467,
+      "created_at": "2026-11-04T15:39:48.443359+00:00",
+      "completed_at": "2026-11-04T15:39:48.464856+00:00"
+    },
+    {
+      "index": 106,
+      "id": "pay_5926c041f4ad4cd58e8ba6551d1266fc",
+      "acceptance_ms": 29.377999999269377,
+      "ok": true,
+      "completion_ms": 23.576,
+      "client_observed_ms": 54.53924999892479,
+      "created_at": "2026-11-04T15:39:48.445178+00:00",
+      "completed_at": "2026-11-04T15:39:48.468754+00:00"
+    },
+    {
+      "index": 107,
+      "id": "pay_7c1f4a6ef3e0425a802aea4cb7b4f80e",
+      "acceptance_ms": 36.98725000140257,
+      "ok": true,
+      "completion_ms": 32.082,
+      "client_observed_ms": 74.26708300044993,
+      "created_at": "2026-11-04T15:39:48.457365+00:00",
+      "completed_at": "2026-11-04T15:39:48.489447+00:00"
+    },
+    {
+      "index": 108,
+      "id": "pay_22dd27a787324f3c9a98c32a2da39695",
+      "acceptance_ms": 44.130208996648435,
+      "ok": true,
+      "completion_ms": 27.564,
+      "client_observed_ms": 87.68029200291494,
+      "created_at": "2026-11-04T15:39:48.465171+00:00",
+      "completed_at": "2026-11-04T15:39:48.492735+00:00"
+    },
+    {
+      "index": 109,
+      "id": "pay_2b86fb12728347c3b66c3ad80aadb58e",
+      "acceptance_ms": 45.446833995811176,
+      "ok": true,
+      "completion_ms": 29.662000000000003,
+      "client_observed_ms": 83.83729199704248,
+      "created_at": "2026-11-04T15:39:48.466947+00:00",
+      "completed_at": "2026-11-04T15:39:48.496609+00:00"
+    },
+    {
+      "index": 110,
+      "id": "pay_d2d64d98ec7f429db3b364fbfc39f154",
+      "acceptance_ms": 26.09483400010504,
+      "ok": true,
+      "completion_ms": 28.809,
+      "client_observed_ms": 56.492916999559384,
+      "created_at": "2026-11-04T15:39:48.456497+00:00",
+      "completed_at": "2026-11-04T15:39:48.485306+00:00"
+    },
+    {
+      "index": 111,
+      "id": "pay_51dd2c241a924645b46981627c00a16e",
+      "acceptance_ms": 33.74008300306741,
+      "ok": true,
+      "completion_ms": 32.178,
+      "client_observed_ms": 72.09008299832931,
+      "created_at": "2026-11-04T15:39:48.468152+00:00",
+      "completed_at": "2026-11-04T15:39:48.500330+00:00"
+    },
+    {
+      "index": 112,
+      "id": "pay_13cb0aea59b74e26aedbd251034e7bc3",
+      "acceptance_ms": 54.5674590030103,
+      "ok": true,
+      "completion_ms": 35.231,
+      "client_observed_ms": 120.57983400154626,
+      "created_at": "2026-11-04T15:39:48.491092+00:00",
+      "completed_at": "2026-11-04T15:39:48.526323+00:00"
+    },
+    {
+      "index": 113,
+      "id": "pay_927267fafd544d95bd15cb807730f960",
+      "acceptance_ms": 33.196333002706524,
+      "ok": true,
+      "completion_ms": 33.042,
+      "client_observed_ms": 113.35808299918426,
+      "created_at": "2026-11-04T15:39:48.471251+00:00",
+      "completed_at": "2026-11-04T15:39:48.504293+00:00"
+    },
+    {
+      "index": 114,
+      "id": "pay_8cff6babba8c4884a36ced418b3da492",
+      "acceptance_ms": 37.99849999631988,
+      "ok": true,
+      "completion_ms": 34.461,
+      "client_observed_ms": 78.6207920027664,
+      "created_at": "2026-11-04T15:39:48.480909+00:00",
+      "completed_at": "2026-11-04T15:39:48.515370+00:00"
+    },
+    {
+      "index": 115,
+      "id": "pay_91e0d749137247518fa54a0a41227a26",
+      "acceptance_ms": 24.044208003033418,
+      "ok": true,
+      "completion_ms": 34.321999999999996,
+      "client_observed_ms": 95.50308300094912,
+      "created_at": "2026-11-04T15:39:48.473760+00:00",
+      "completed_at": "2026-11-04T15:39:48.508082+00:00"
+    },
+    {
+      "index": 116,
+      "id": "pay_71c711819a0d444fa04f034d95fcaa9b",
+      "acceptance_ms": 23.223541997140273,
+      "ok": true,
+      "completion_ms": 31.208,
+      "client_observed_ms": 97.00779199920362,
+      "created_at": "2026-11-04T15:39:48.480192+00:00",
+      "completed_at": "2026-11-04T15:39:48.511400+00:00"
+    },
+    {
+      "index": 117,
+      "id": "pay_3347a2d5413b4a418e890a8635e5d8e0",
+      "acceptance_ms": 29.467375003150664,
+      "ok": true,
+      "completion_ms": 33.34,
+      "client_observed_ms": 102.5993329967605,
+      "created_at": "2026-11-04T15:39:48.489514+00:00",
+      "completed_at": "2026-11-04T15:39:48.522854+00:00"
+    },
+    {
+      "index": 118,
+      "id": "pay_61f28e3beb7547489a4953bca87d9657",
+      "acceptance_ms": 23.8923330034595,
+      "ok": true,
+      "completion_ms": 33.474,
+      "client_observed_ms": 98.58987500047078,
+      "created_at": "2026-11-04T15:39:48.485213+00:00",
+      "completed_at": "2026-11-04T15:39:48.518687+00:00"
+    },
+    {
+      "index": 119,
+      "id": "pay_98cf91c0238b4e009161443d0c470f2a",
+      "acceptance_ms": 24.74120799888624,
+      "ok": true,
+      "completion_ms": 32.177,
+      "client_observed_ms": 56.9357919957838,
+      "created_at": "2026-11-04T15:39:48.497604+00:00",
+      "completed_at": "2026-11-04T15:39:48.529781+00:00"
+    },
+    {
+      "index": 120,
+      "id": "pay_d9ca4c5779e64f3684c15be7006895eb",
+      "acceptance_ms": 25.703999999677762,
+      "ok": true,
+      "completion_ms": 32.870000000000005,
+      "client_observed_ms": 109.63366700161714,
+      "created_at": "2026-11-04T15:39:48.500660+00:00",
+      "completed_at": "2026-11-04T15:39:48.533530+00:00"
+    },
+    {
+      "index": 121,
+      "id": "pay_9c84f67b773f4227bbc235493d5891e0",
+      "acceptance_ms": 23.05016700120177,
+      "ok": true,
+      "completion_ms": 35.83,
+      "client_observed_ms": 109.08691700024065,
+      "created_at": "2026-11-04T15:39:48.502388+00:00",
+      "completed_at": "2026-11-04T15:39:48.538218+00:00"
+    },
+    {
+      "index": 122,
+      "id": "pay_f7ad3702ddfe43abb54668ed1ac4fe26",
+      "acceptance_ms": 29.83095799572766,
+      "ok": true,
+      "completion_ms": 29.26,
+      "client_observed_ms": 108.75504199793795,
+      "created_at": "2026-11-04T15:39:48.512428+00:00",
+      "completed_at": "2026-11-04T15:39:48.541688+00:00"
+    },
+    {
+      "index": 123,
+      "id": "pay_366dc53d6ab04641a638ba5b6f624196",
+      "acceptance_ms": 34.869082999648526,
+      "ok": true,
+      "completion_ms": 25.778,
+      "client_observed_ms": 70.77016700350214,
+      "created_at": "2026-11-04T15:39:48.522622+00:00",
+      "completed_at": "2026-11-04T15:39:48.548400+00:00"
+    },
+    {
+      "index": 124,
+      "id": "pay_c99813098c394583b6f21e9a6ecff7b6",
+      "acceptance_ms": 22.232707997318357,
+      "ok": true,
+      "completion_ms": 27.163,
+      "client_observed_ms": 118.48737500258721,
+      "created_at": "2026-11-04T15:39:48.517996+00:00",
+      "completed_at": "2026-11-04T15:39:48.545159+00:00"
+    },
+    {
+      "index": 125,
+      "id": "pay_e0f4caaf819a4913b26de981b003407f",
+      "acceptance_ms": 56.95087499771034,
+      "ok": true,
+      "completion_ms": 21.482999999999997,
+      "client_observed_ms": 83.82654099841602,
+      "created_at": "2026-11-04T15:39:48.552277+00:00",
+      "completed_at": "2026-11-04T15:39:48.573760+00:00"
+    },
+    {
+      "index": 126,
+      "id": "pay_5537a28d3b3d45bca023d8225736150f",
+      "acceptance_ms": 20.136832994467113,
+      "ok": true,
+      "completion_ms": 25.77,
+      "client_observed_ms": 94.52041599433869,
+      "created_at": "2026-11-04T15:39:48.526980+00:00",
+      "completed_at": "2026-11-04T15:39:48.552750+00:00"
+    },
+    {
+      "index": 127,
+      "id": "pay_d21bb53060cf465faf2c983adc191f69",
+      "acceptance_ms": 32.47445900342427,
+      "ok": true,
+      "completion_ms": 20.548000000000002,
+      "client_observed_ms": 69.41420899966033,
+      "created_at": "2026-11-04T15:39:48.539511+00:00",
+      "completed_at": "2026-11-04T15:39:48.560059+00:00"
+    },
+    {
+      "index": 128,
+      "id": "pay_31cead0917014d4dbb2a60793bcf4577",
+      "acceptance_ms": 26.651874999515712,
+      "ok": true,
+      "completion_ms": 21.833000000000002,
+      "client_observed_ms": 102.77654099627398,
+      "created_at": "2026-11-04T15:39:48.534912+00:00",
+      "completed_at": "2026-11-04T15:39:48.556745+00:00"
+    },
+    {
+      "index": 129,
+      "id": "pay_95d3b1afe25f46e7ab527709b960b9ec",
+      "acceptance_ms": 31.889500001852866,
+      "ok": true,
+      "completion_ms": 20.581,
+      "client_observed_ms": 69.64924999920186,
+      "created_at": "2026-11-04T15:39:48.542614+00:00",
+      "completed_at": "2026-11-04T15:39:48.563195+00:00"
+    },
+    {
+      "index": 130,
+      "id": "pay_7b757c1241a047a69998b107ef310f93",
+      "acceptance_ms": 24.793625001620967,
+      "ok": true,
+      "completion_ms": 17.643,
+      "client_observed_ms": 44.22958299983293,
+      "created_at": "2026-11-04T15:39:48.548792+00:00",
+      "completed_at": "2026-11-04T15:39:48.566435+00:00"
+    },
+    {
+      "index": 131,
+      "id": "pay_cde1f6b2b0bb4156b4e23df2edbeb250",
+      "acceptance_ms": 18.183792002673727,
+      "ok": true,
+      "completion_ms": 20.812,
+      "client_observed_ms": 42.73079200356733,
+      "created_at": "2026-11-04T15:39:48.549501+00:00",
+      "completed_at": "2026-11-04T15:39:48.570313+00:00"
+    },
+    {
+      "index": 132,
+      "id": "pay_8a8d817329624f63998625fdf6ab27b9",
+      "acceptance_ms": 41.60383399721468,
+      "ok": true,
+      "completion_ms": 15.833,
+      "client_observed_ms": 65.17870899551781,
+      "created_at": "2026-11-04T15:39:48.573471+00:00",
+      "completed_at": "2026-11-04T15:39:48.589304+00:00"
+    },
+    {
+      "index": 133,
+      "id": "pay_5f1d624c822045049d115a3959f8f9d9",
+      "acceptance_ms": 30.581457998778205,
+      "ok": true,
+      "completion_ms": 11.891,
+      "client_observed_ms": 58.468750001338776,
+      "created_at": "2026-11-04T15:39:48.565707+00:00",
+      "completed_at": "2026-11-04T15:39:48.577598+00:00"
+    },
+    {
+      "index": 134,
+      "id": "pay_a47ac69ee87147869d9acbdda4d6dadd",
+      "acceptance_ms": 19.14616699650651,
+      "ok": true,
+      "completion_ms": 14.232,
+      "client_observed_ms": 47.61299999518087,
+      "created_at": "2026-11-04T15:39:48.567367+00:00",
+      "completed_at": "2026-11-04T15:39:48.581599+00:00"
+    },
+    {
+      "index": 135,
+      "id": "pay_a9bbfcb32b114f588dd21716220518e6",
+      "acceptance_ms": 18.88183299888624,
+      "ok": true,
+      "completion_ms": 14.128,
+      "client_observed_ms": 57.05079100152943,
+      "created_at": "2026-11-04T15:39:48.571931+00:00",
+      "completed_at": "2026-11-04T15:39:48.586059+00:00"
+    },
+    {
+      "index": 136,
+      "id": "pay_35c83e9158324b008585a78e0805e0ee",
+      "acceptance_ms": 26.910166001471225,
+      "ok": true,
+      "completion_ms": 15.077,
+      "client_observed_ms": 66.46241600537905,
+      "created_at": "2026-11-04T15:39:48.581229+00:00",
+      "completed_at": "2026-11-04T15:39:48.596306+00:00"
+    },
+    {
+      "index": 137,
+      "id": "pay_0c33dbd6743243f695fc45de529019cd",
+      "acceptance_ms": 28.058916999725625,
+      "ok": true,
+      "completion_ms": 19.193,
+      "client_observed_ms": 66.06287499744212,
+      "created_at": "2026-11-04T15:39:48.584233+00:00",
+      "completed_at": "2026-11-04T15:39:48.603426+00:00"
+    },
+    {
+      "index": 138,
+      "id": "pay_4391974abc4e42b287550632822231a7",
+      "acceptance_ms": 51.46733299625339,
+      "ok": true,
+      "completion_ms": 15.554,
+      "client_observed_ms": 77.57841599959647,
+      "created_at": "2026-11-04T15:39:48.606631+00:00",
+      "completed_at": "2026-11-04T15:39:48.622185+00:00"
+    },
+    {
+      "index": 139,
+      "id": "pay_35514b769feb402eba8cdd6047bae811",
+      "acceptance_ms": 20.238083001459017,
+      "ok": true,
+      "completion_ms": 11.979999999999999,
+      "client_observed_ms": 52.241999997932,
+      "created_at": "2026-11-04T15:39:48.580577+00:00",
+      "completed_at": "2026-11-04T15:39:48.592557+00:00"
+    },
+    {
+      "index": 140,
+      "id": "pay_63cddb685e9b40ec934feaddafd66891",
+      "acceptance_ms": 22.473166995041538,
+      "ok": true,
+      "completion_ms": 16.194,
+      "client_observed_ms": 83.58470799430506,
+      "created_at": "2026-11-04T15:39:48.583424+00:00",
+      "completed_at": "2026-11-04T15:39:48.599618+00:00"
+    },
+    {
+      "index": 141,
+      "id": "pay_fc01da865b5c43298632ec7dbbad165e",
+      "acceptance_ms": 37.67341699858662,
+      "ok": true,
+      "completion_ms": 13.243,
+      "client_observed_ms": 91.18699999817181,
+      "created_at": "2026-11-04T15:39:48.605196+00:00",
+      "completed_at": "2026-11-04T15:39:48.618439+00:00"
+    },
+    {
+      "index": 142,
+      "id": "pay_78ee1f7880a04ef9aa57059432d5a27c",
+      "acceptance_ms": 31.079707994649652,
+      "ok": true,
+      "completion_ms": 11.334,
+      "client_observed_ms": 56.44641699473141,
+      "created_at": "2026-11-04T15:39:48.603328+00:00",
+      "completed_at": "2026-11-04T15:39:48.614662+00:00"
+    },
+    {
+      "index": 143,
+      "id": "pay_7a551019d5a64c69b74aff638203bf63",
+      "acceptance_ms": 23.917250000522472,
+      "ok": true,
+      "completion_ms": 8.841999999999999,
+      "client_observed_ms": 65.29708400194068,
+      "created_at": "2026-11-04T15:39:48.598363+00:00",
+      "completed_at": "2026-11-04T15:39:48.607205+00:00"
+    },
+    {
+      "index": 144,
+      "id": "pay_288c530ee7104107b413d92b15bd0e97",
+      "acceptance_ms": 23.42379200126743,
+      "ok": true,
+      "completion_ms": 9.1,
+      "client_observed_ms": 56.91870900045615,
+      "created_at": "2026-11-04T15:39:48.601571+00:00",
+      "completed_at": "2026-11-04T15:39:48.610671+00:00"
+    },
+    {
+      "index": 145,
+      "id": "pay_99e12f35cb8247d1adc63fe1b830fa2e",
+      "acceptance_ms": 39.98912499810103,
+      "ok": true,
+      "completion_ms": 13.106,
+      "client_observed_ms": 78.5201659964514,
+      "created_at": "2026-11-04T15:39:48.619015+00:00",
+      "completed_at": "2026-11-04T15:39:48.632121+00:00"
+    },
+    {
+      "index": 146,
+      "id": "pay_cd853c5a75f0493db3e9acb8173e17e5",
+      "acceptance_ms": 42.54154200316407,
+      "ok": true,
+      "completion_ms": 18.078,
+      "client_observed_ms": 65.85083399841096,
+      "created_at": "2026-11-04T15:39:48.626890+00:00",
+      "completed_at": "2026-11-04T15:39:48.644968+00:00"
+    },
+    {
+      "index": 147,
+      "id": "pay_8e86bd4522b94518ae2d84a5d9d90a78",
+      "acceptance_ms": 25.753082998562604,
+      "ok": true,
+      "completion_ms": 12.019,
+      "client_observed_ms": 51.08945800020592,
+      "created_at": "2026-11-04T15:39:48.613411+00:00",
+      "completed_at": "2026-11-04T15:39:48.625430+00:00"
+    },
+    {
+      "index": 148,
+      "id": "pay_487012a6ec09404fa22042b95060ea3e",
+      "acceptance_ms": 25.925959002051968,
+      "ok": true,
+      "completion_ms": 12.893999999999998,
+      "client_observed_ms": 73.40512500377372,
+      "created_at": "2026-11-04T15:39:48.615893+00:00",
+      "completed_at": "2026-11-04T15:39:48.628787+00:00"
+    },
+    {
+      "index": 149,
+      "id": "pay_d70dfce51d4444d685da93ce44fc85a4",
+      "acceptance_ms": 40.846999996574596,
+      "ok": true,
+      "completion_ms": 17.215999999999998,
+      "client_observed_ms": 80.5781669987482,
+      "created_at": "2026-11-04T15:39:48.631115+00:00",
+      "completed_at": "2026-11-04T15:39:48.648331+00:00"
+    },
+    {
+      "index": 150,
+      "id": "pay_aa0df9e70c9e45ffad35e21fec552203",
+      "acceptance_ms": 41.7702909981017,
+      "ok": true,
+      "completion_ms": 17.012,
+      "client_observed_ms": 66.64270799956284,
+      "created_at": "2026-11-04T15:39:48.634648+00:00",
+      "completed_at": "2026-11-04T15:39:48.651660+00:00"
+    },
+    {
+      "index": 151,
+      "id": "pay_674471e5d146486bbd1ed3c11587e230",
+      "acceptance_ms": 24.461417000566144,
+      "ok": true,
+      "completion_ms": 16.246,
+      "client_observed_ms": 57.18404200160876,
+      "created_at": "2026-11-04T15:39:48.620649+00:00",
+      "completed_at": "2026-11-04T15:39:48.636895+00:00"
+    },
+    {
+      "index": 152,
+      "id": "pay_fe4c4f728f0f4a4fb1c87ca13ddb0c82",
+      "acceptance_ms": 25.604916998418048,
+      "ok": true,
+      "completion_ms": 15.575999999999999,
+      "client_observed_ms": 48.925209004664794,
+      "created_at": "2026-11-04T15:39:48.625430+00:00",
+      "completed_at": "2026-11-04T15:39:48.641006+00:00"
+    },
+    {
+      "index": 153,
+      "id": "pay_eeb179f6116b4dc3b25c034d20ec9a2c",
+      "acceptance_ms": 39.31041699979687,
+      "ok": true,
+      "completion_ms": 18.834,
+      "client_observed_ms": 80.89162499527447,
+      "created_at": "2026-11-04T15:39:48.647822+00:00",
+      "completed_at": "2026-11-04T15:39:48.666656+00:00"
+    },
+    {
+      "index": 154,
+      "id": "pay_3143656d0ed74137a8c8977843c2a471",
+      "acceptance_ms": 31.55700000206707,
+      "ok": true,
+      "completion_ms": 17.073,
+      "client_observed_ms": 54.8953329998767,
+      "created_at": "2026-11-04T15:39:48.642157+00:00",
+      "completed_at": "2026-11-04T15:39:48.659230+00:00"
+    },
+    {
+      "index": 155,
+      "id": "pay_2463bec8ae204e46a046135b4f6cf38c",
+      "acceptance_ms": 30.78004199778661,
+      "ok": true,
+      "completion_ms": 19.269000000000002,
+      "client_observed_ms": 55.908499998622574,
+      "created_at": "2026-11-04T15:39:48.643656+00:00",
+      "completed_at": "2026-11-04T15:39:48.662925+00:00"
+    },
+    {
+      "index": 156,
+      "id": "pay_cacde053dd514aa887b76c9672bf670c",
+      "acceptance_ms": 24.782334003248252,
+      "ok": true,
+      "completion_ms": 18.16,
+      "client_observed_ms": 64.77937500312692,
+      "created_at": "2026-11-04T15:39:48.637478+00:00",
+      "completed_at": "2026-11-04T15:39:48.655638+00:00"
+    },
+    {
+      "index": 157,
+      "id": "pay_9d10e90e213f4a879a3f44643c199376",
+      "acceptance_ms": 48.55029200552963,
+      "ok": true,
+      "completion_ms": 13.131,
+      "client_observed_ms": 81.4995840046322,
+      "created_at": "2026-11-04T15:39:48.669238+00:00",
+      "completed_at": "2026-11-04T15:39:48.682369+00:00"
+    },
+    {
+      "index": 158,
+      "id": "pay_54d4a187ecdc494f8cca31e20bca151a",
+      "acceptance_ms": 32.97004099295009,
+      "ok": true,
+      "completion_ms": 15.663,
+      "client_observed_ms": 66.80274999962421,
+      "created_at": "2026-11-04T15:39:48.655567+00:00",
+      "completed_at": "2026-11-04T15:39:48.671230+00:00"
+    },
+    {
+      "index": 159,
+      "id": "pay_624017c82ad8472bb843319fafa284a3",
+      "acceptance_ms": 32.16174999397481,
+      "ok": true,
+      "completion_ms": 13.758,
+      "client_observed_ms": 57.32891699881293,
+      "created_at": "2026-11-04T15:39:48.660726+00:00",
+      "completed_at": "2026-11-04T15:39:48.674484+00:00"
+    },
+    {
+      "index": 160,
+      "id": "pay_47742d9fc8424a7f98ea98088cffef82",
+      "acceptance_ms": 48.70833300083177,
+      "ok": true,
+      "completion_ms": 22.456,
+      "client_observed_ms": 72.19741700100712,
+      "created_at": "2026-11-04T15:39:48.682596+00:00",
+      "completed_at": "2026-11-04T15:39:48.705052+00:00"
+    },
+    {
+      "index": 161,
+      "id": "pay_e20bed2b971640b8a293f03d9b1cf3d5",
+      "acceptance_ms": 33.39854200021364,
+      "ok": true,
+      "completion_ms": 11.478,
+      "client_observed_ms": 73.484542001097,
+      "created_at": "2026-11-04T15:39:48.666949+00:00",
+      "completed_at": "2026-11-04T15:39:48.678427+00:00"
+    },
+    {
+      "index": 162,
+      "id": "pay_2d262278f1c84a20a10cc4a438b4b4a5",
+      "acceptance_ms": 40.99233300075866,
+      "ok": true,
+      "completion_ms": 17.785,
+      "client_observed_ms": 66.27237500651972,
+      "created_at": "2026-11-04T15:39:48.679677+00:00",
+      "completed_at": "2026-11-04T15:39:48.697462+00:00"
+    },
+    {
+      "index": 163,
+      "id": "pay_c379faa58858436bb43969d1f513e8b0",
+      "acceptance_ms": 41.40962500241585,
+      "ok": true,
+      "completion_ms": 20.866,
+      "client_observed_ms": 65.90475000120932,
+      "created_at": "2026-11-04T15:39:48.680828+00:00",
+      "completed_at": "2026-11-04T15:39:48.701694+00:00"
+    },
+    {
+      "index": 164,
+      "id": "pay_b72a51bfee7f4d9ea2ec22de3ca73af9",
+      "acceptance_ms": 40.653625001141336,
+      "ok": true,
+      "completion_ms": 23.663,
+      "client_observed_ms": 65.09024999832036,
+      "created_at": "2026-11-04T15:39:48.685198+00:00",
+      "completed_at": "2026-11-04T15:39:48.708861+00:00"
+    },
+    {
+      "index": 165,
+      "id": "pay_409339fa588c432885aa780c92526160",
+      "acceptance_ms": 25.978582998504862,
+      "ok": true,
+      "completion_ms": 11.939,
+      "client_observed_ms": 78.43620799394557,
+      "created_at": "2026-11-04T15:39:48.674061+00:00",
+      "completed_at": "2026-11-04T15:39:48.686000+00:00"
+    },
+    {
+      "index": 166,
+      "id": "pay_b814b8d483514c1290bacd350252f890",
+      "acceptance_ms": 25.460749995545484,
+      "ok": true,
+      "completion_ms": 14.533000000000001,
+      "client_observed_ms": 64.78299999434967,
+      "created_at": "2026-11-04T15:39:48.675519+00:00",
+      "completed_at": "2026-11-04T15:39:48.690052+00:00"
+    },
+    {
+      "index": 167,
+      "id": "pay_3693da2b057f47ba9cf5331106ee3196",
+      "acceptance_ms": 25.230375002138317,
+      "ok": true,
+      "completion_ms": 16.259,
+      "client_observed_ms": 71.99070800561458,
+      "created_at": "2026-11-04T15:39:48.677722+00:00",
+      "completed_at": "2026-11-04T15:39:48.693981+00:00"
+    },
+    {
+      "index": 168,
+      "id": "pay_a2ba890d8bdb40b2afcf62a9933ec508",
+      "acceptance_ms": 41.01749999972526,
+      "ok": true,
+      "completion_ms": 28.398,
+      "client_observed_ms": 118.19012499472592,
+      "created_at": "2026-11-04T15:39:48.697948+00:00",
+      "completed_at": "2026-11-04T15:39:48.726346+00:00"
+    },
+    {
+      "index": 169,
+      "id": "pay_d08edd6e6b8d4440a9120476da38f312",
+      "acceptance_ms": 35.77395899628755,
+      "ok": true,
+      "completion_ms": 23.3,
+      "client_observed_ms": 59.317041996109765,
+      "created_at": "2026-11-04T15:39:48.692463+00:00",
+      "completed_at": "2026-11-04T15:39:48.715763+00:00"
+    },
+    {
+      "index": 170,
+      "id": "pay_398808b70cba4715b04959465886d8c8",
+      "acceptance_ms": 34.575165998830926,
+      "ok": true,
+      "completion_ms": 25.864,
+      "client_observed_ms": 72.86454099812545,
+      "created_at": "2026-11-04T15:39:48.693634+00:00",
+      "completed_at": "2026-11-04T15:39:48.719498+00:00"
+    },
+    {
+      "index": 171,
+      "id": "pay_139a4a39adbe4771b36a3f43cd9510de",
+      "acceptance_ms": 26.65500000148313,
+      "ok": true,
+      "completion_ms": 22.648999999999997,
+      "client_observed_ms": 71.77112500357907,
+      "created_at": "2026-11-04T15:39:48.689671+00:00",
+      "completed_at": "2026-11-04T15:39:48.712320+00:00"
+    },
+    {
+      "index": 172,
+      "id": "pay_4f2adb4377164d6d8730527daf8faf9d",
+      "acceptance_ms": 33.7054999981774,
+      "ok": true,
+      "completion_ms": 30.955,
+      "client_observed_ms": 105.9311670032912,
+      "created_at": "2026-11-04T15:39:48.698521+00:00",
+      "completed_at": "2026-11-04T15:39:48.729476+00:00"
+    },
+    {
+      "index": 173,
+      "id": "pay_de1b666f0e104b2593ca75fcc1c7d598",
+      "acceptance_ms": 32.8951670016977,
+      "ok": true,
+      "completion_ms": 31.917,
+      "client_observed_ms": 78.3299589966191,
+      "created_at": "2026-11-04T15:39:48.701143+00:00",
+      "completed_at": "2026-11-04T15:39:48.733060+00:00"
+    },
+    {
+      "index": 174,
+      "id": "pay_ab0804f948914b65b9f5d03f5437e049",
+      "acceptance_ms": 26.136207998206373,
+      "ok": true,
+      "completion_ms": 25.871000000000002,
+      "client_observed_ms": 77.65433299937285,
+      "created_at": "2026-11-04T15:39:48.696900+00:00",
+      "completed_at": "2026-11-04T15:39:48.722771+00:00"
+    },
+    {
+      "index": 175,
+      "id": "pay_1e9b21c840fa4cf5bdb29d963757632e",
+      "acceptance_ms": 60.98145800206112,
+      "ok": true,
+      "completion_ms": 21.318,
+      "client_observed_ms": 89.99112500168849,
+      "created_at": "2026-11-04T15:39:48.738462+00:00",
+      "completed_at": "2026-11-04T15:39:48.759780+00:00"
+    },
+    {
+      "index": 176,
+      "id": "pay_b9c41e383b294e8bb5b1b53ee4ee368c",
+      "acceptance_ms": 26.587291999021545,
+      "ok": true,
+      "completion_ms": 24.354,
+      "client_observed_ms": 56.84491699503269,
+      "created_at": "2026-11-04T15:39:48.712697+00:00",
+      "completed_at": "2026-11-04T15:39:48.737051+00:00"
+    },
+    {
+      "index": 177,
+      "id": "pay_657773de36604149aa135218d74df4b6",
+      "acceptance_ms": 24.88512499985518,
+      "ok": true,
+      "completion_ms": 27.399,
+      "client_observed_ms": 61.993791998247616,
+      "created_at": "2026-11-04T15:39:48.713535+00:00",
+      "completed_at": "2026-11-04T15:39:48.740934+00:00"
+    },
+    {
+      "index": 178,
+      "id": "pay_c447a62846c044c5bce05931be964edd",
+      "acceptance_ms": 30.583540996303782,
+      "ok": true,
+      "completion_ms": 24.127,
+      "client_observed_ms": 54.599207993305754,
+      "created_at": "2026-11-04T15:39:48.720633+00:00",
+      "completed_at": "2026-11-04T15:39:48.744760+00:00"
+    },
+    {
+      "index": 179,
+      "id": "pay_fe83491789b243f5be1ad4799e7e8cf8",
+      "acceptance_ms": 38.896500002010725,
+      "ok": true,
+      "completion_ms": 24.829,
+      "client_observed_ms": 105.20670800178777,
+      "created_at": "2026-11-04T15:39:48.741684+00:00",
+      "completed_at": "2026-11-04T15:39:48.766513+00:00"
+    },
+    {
+      "index": 180,
+      "id": "pay_84bf05f2a2a74cd28ad04be8a5645340",
+      "acceptance_ms": 31.218791998981033,
+      "ok": true,
+      "completion_ms": 19.301,
+      "client_observed_ms": 74.11591699928977,
+      "created_at": "2026-11-04T15:39:48.736443+00:00",
+      "completed_at": "2026-11-04T15:39:48.755744+00:00"
+    },
+    {
+      "index": 181,
+      "id": "pay_2b6bda4e01e04b7b89326a0b67329267",
+      "acceptance_ms": 24.273959003039636,
+      "ok": true,
+      "completion_ms": 18.009,
+      "client_observed_ms": 53.777791996253654,
+      "created_at": "2026-11-04T15:39:48.730172+00:00",
+      "completed_at": "2026-11-04T15:39:48.748181+00:00"
+    },
+    {
+      "index": 182,
+      "id": "pay_4bde8ca0bfdc477cb6f2a683a24aa2d2",
+      "acceptance_ms": 24.450750002870336,
+      "ok": true,
+      "completion_ms": 21.048000000000002,
+      "client_observed_ms": 74.36416699783877,
+      "created_at": "2026-11-04T15:39:48.731112+00:00",
+      "completed_at": "2026-11-04T15:39:48.752160+00:00"
+    },
+    {
+      "index": 183,
+      "id": "pay_fb848b8b83c640ef876107afc3f788b0",
+      "acceptance_ms": 44.34762500022771,
+      "ok": true,
+      "completion_ms": 23.104,
+      "client_observed_ms": 68.47050000214949,
+      "created_at": "2026-11-04T15:39:48.754311+00:00",
+      "completed_at": "2026-11-04T15:39:48.777415+00:00"
+    },
+    {
+      "index": 184,
+      "id": "pay_23b777e48da1483a84b42a2c29366af8",
+      "acceptance_ms": 44.66699999466073,
+      "ok": true,
+      "completion_ms": 25.119,
+      "client_observed_ms": 79.79129199520685,
+      "created_at": "2026-11-04T15:39:48.755797+00:00",
+      "completed_at": "2026-11-04T15:39:48.780916+00:00"
+    },
+    {
+      "index": 185,
+      "id": "pay_94bd0b40b7be4441b8594356d8a73c9d",
+      "acceptance_ms": 23.680167003476527,
+      "ok": true,
+      "completion_ms": 22.967000000000002,
+      "client_observed_ms": 96.5900840019458,
+      "created_at": "2026-11-04T15:39:48.740217+00:00",
+      "completed_at": "2026-11-04T15:39:48.763184+00:00"
+    },
+    {
+      "index": 186,
+      "id": "pay_5a885251aabb40f098f40369b823c8c4",
+      "acceptance_ms": 25.060333995497786,
+      "ok": true,
+      "completion_ms": 27.25,
+      "client_observed_ms": 101.55008400033694,
+      "created_at": "2026-11-04T15:39:48.742738+00:00",
+      "completed_at": "2026-11-04T15:39:48.769988+00:00"
+    },
+    {
+      "index": 187,
+      "id": "pay_61b054061c2446d5909cb8b8e8ac682d",
+      "acceptance_ms": 23.578542000905145,
+      "ok": true,
+      "completion_ms": 24.502,
+      "client_observed_ms": 52.886000004946254,
+      "created_at": "2026-11-04T15:39:48.749158+00:00",
+      "completed_at": "2026-11-04T15:39:48.773660+00:00"
+    },
+    {
+      "index": 188,
+      "id": "pay_887b9f71bb604a27a46ac1331401b0b1",
+      "acceptance_ms": 30.32129100029124,
+      "ok": true,
+      "completion_ms": 31.196,
+      "client_observed_ms": 113.64725000021281,
+      "created_at": "2026-11-04T15:39:48.757516+00:00",
+      "completed_at": "2026-11-04T15:39:48.788712+00:00"
+    },
+    {
+      "index": 189,
+      "id": "pay_d71fde7e51944f7bbe135ebf15fcb7a1",
+      "acceptance_ms": 23.62925000488758,
+      "ok": true,
+      "completion_ms": 27.904999999999998,
+      "client_observed_ms": 97.31279200059362,
+      "created_at": "2026-11-04T15:39:48.756892+00:00",
+      "completed_at": "2026-11-04T15:39:48.784797+00:00"
+    },
+    {
+      "index": 190,
+      "id": "pay_71ed3c43046549988d61f628df0c6c07",
+      "acceptance_ms": 34.304958004213404,
+      "ok": true,
+      "completion_ms": 25.402,
+      "client_observed_ms": 60.34054200426908,
+      "created_at": "2026-11-04T15:39:48.770314+00:00",
+      "completed_at": "2026-11-04T15:39:48.795716+00:00"
+    },
+    {
+      "index": 191,
+      "id": "pay_b08ebc4efb114532b5369ba9978c55e6",
+      "acceptance_ms": 29.666207999980543,
+      "ok": true,
+      "completion_ms": 26.152,
+      "client_observed_ms": 105.68941599922255,
+      "created_at": "2026-11-04T15:39:48.773346+00:00",
+      "completed_at": "2026-11-04T15:39:48.799498+00:00"
+    },
+    {
+      "index": 192,
+      "id": "pay_0ce8b94d67a44fecbf683ddd1a2250a4",
+      "acceptance_ms": 21.343542000977322,
+      "ok": true,
+      "completion_ms": 25.901,
+      "client_observed_ms": 49.88487499940675,
+      "created_at": "2026-11-04T15:39:48.766226+00:00",
+      "completed_at": "2026-11-04T15:39:48.792127+00:00"
+    },
+    {
+      "index": 193,
+      "id": "pay_1dd12d1f6ee14e159508ab2003207f13",
+      "acceptance_ms": 36.20683299959637,
+      "ok": true,
+      "completion_ms": 22.557000000000002,
+      "client_observed_ms": 63.70004200289259,
+      "created_at": "2026-11-04T15:39:48.784028+00:00",
+      "completed_at": "2026-11-04T15:39:48.806585+00:00"
+    },
+    {
+      "index": 194,
+      "id": "pay_52f49510af59483491f293bec90862fd",
+      "acceptance_ms": 35.34716699505225,
+      "ok": true,
+      "completion_ms": 27.024,
+      "client_observed_ms": 82.78608399996301,
+      "created_at": "2026-11-04T15:39:48.786464+00:00",
+      "completed_at": "2026-11-04T15:39:48.813488+00:00"
+    },
+    {
+      "index": 195,
+      "id": "pay_684019a18b934af8bdcd0e541298856a",
+      "acceptance_ms": 22.763541994208936,
+      "ok": true,
+      "completion_ms": 28.652,
+      "client_observed_ms": 94.05254200100899,
+      "created_at": "2026-11-04T15:39:48.774472+00:00",
+      "completed_at": "2026-11-04T15:39:48.803124+00:00"
+    },
+    {
+      "index": 196,
+      "id": "pay_c7f9981205674f9194f5d7c297fc512d",
+      "acceptance_ms": 23.91008300037356,
+      "ok": true,
+      "completion_ms": 25.094,
+      "client_observed_ms": 88.47000000241678,
+      "created_at": "2026-11-04T15:39:48.784843+00:00",
+      "completed_at": "2026-11-04T15:39:48.809937+00:00"
+    },
+    {
+      "index": 197,
+      "id": "pay_c0e1cccb4f6b4a19a05d4c4dc32c996c",
+      "acceptance_ms": 21.941457998764236,
+      "ok": true,
+      "completion_ms": 26.415000000000003,
+      "client_observed_ms": 142.30295800371096,
+      "created_at": "2026-11-04T15:39:48.790411+00:00",
+      "completed_at": "2026-11-04T15:39:48.816826+00:00"
+    },
+    {
+      "index": 198,
+      "id": "pay_0e1b0140fc454c11937ca0ecac6bbacc",
+      "acceptance_ms": 20.51091700559482,
+      "ok": true,
+      "completion_ms": 28.012,
+      "client_observed_ms": 86.76800000102958,
+      "created_at": "2026-11-04T15:39:48.793052+00:00",
+      "completed_at": "2026-11-04T15:39:48.821064+00:00"
+    },
+    {
+      "index": 199,
+      "id": "pay_8a492ec07a1d4d9db58948b6d44073de",
+      "acceptance_ms": 25.78929100127425,
+      "ok": true,
+      "completion_ms": 25.506999999999998,
+      "client_observed_ms": 107.35604100045748,
+      "created_at": "2026-11-04T15:39:48.803397+00:00",
+      "completed_at": "2026-11-04T15:39:48.828904+00:00"
+    },
+    {
+      "index": 200,
+      "id": "pay_70be85a2d2fc4e8280e2d881985e0719",
+      "acceptance_ms": 38.61749999487074,
+      "ok": true,
+      "completion_ms": 19.828,
+      "client_observed_ms": 62.14199999521952,
+      "created_at": "2026-11-04T15:39:48.815749+00:00",
+      "completed_at": "2026-11-04T15:39:48.835577+00:00"
+    },
+    {
+      "index": 201,
+      "id": "pay_0a8a2816a8114354bdaaab817937dc37",
+      "acceptance_ms": 19.78512499772478,
+      "ok": true,
+      "completion_ms": 25.81,
+      "client_observed_ms": 106.96562499651918,
+      "created_at": "2026-11-04T15:39:48.798788+00:00",
+      "completed_at": "2026-11-04T15:39:48.824598+00:00"
+    },
+    {
+      "index": 202,
+      "id": "pay_8a4e221d79954df7b336de9077c625ed",
+      "acceptance_ms": 25.75320899632061,
+      "ok": true,
+      "completion_ms": 24.993000000000002,
+      "client_observed_ms": 74.28816700121388,
+      "created_at": "2026-11-04T15:39:48.807239+00:00",
+      "completed_at": "2026-11-04T15:39:48.832232+00:00"
+    },
+    {
+      "index": 203,
+      "id": "pay_289b0083680e403a949825b1f004264c",
+      "acceptance_ms": 45.38354199758032,
+      "ok": true,
+      "completion_ms": 17.777,
+      "client_observed_ms": 70.3242079980555,
+      "created_at": "2026-11-04T15:39:48.827496+00:00",
+      "completed_at": "2026-11-04T15:39:48.845273+00:00"
+    },
+    {
+      "index": 204,
+      "id": "pay_e7fda449be8945219381820e57955126",
+      "acceptance_ms": 31.787874999281485,
+      "ok": true,
+      "completion_ms": 18.209,
+      "client_observed_ms": 56.3250000050175,
+      "created_at": "2026-11-04T15:39:48.823809+00:00",
+      "completed_at": "2026-11-04T15:39:48.842018+00:00"
+    },
+    {
+      "index": 205,
+      "id": "pay_946b26c8d30b4509b5086135dafd1ae5",
+      "acceptance_ms": 32.27258400147548,
+      "ok": true,
+      "completion_ms": 21.035999999999998,
+      "client_observed_ms": 57.0996250025928,
+      "created_at": "2026-11-04T15:39:48.827694+00:00",
+      "completed_at": "2026-11-04T15:39:48.848730+00:00"
+    },
+    {
+      "index": 206,
+      "id": "pay_f93b1c5397a64122b1ab685a41113341",
+      "acceptance_ms": 20.43954200053122,
+      "ok": true,
+      "completion_ms": 21.406000000000002,
+      "client_observed_ms": 101.0163749961066,
+      "created_at": "2026-11-04T15:39:48.817228+00:00",
+      "completed_at": "2026-11-04T15:39:48.838634+00:00"
+    },
+    {
+      "index": 207,
+      "id": "pay_a3f1751e65bb49c7b4db3f22face3b91",
+      "acceptance_ms": 48.70841699448647,
+      "ok": true,
+      "completion_ms": 6.649,
+      "client_observed_ms": 78.69679199939128,
+      "created_at": "2026-11-04T15:39:48.857421+00:00",
+      "completed_at": "2026-11-04T15:39:48.864070+00:00"
+    },
+    {
+      "index": 208,
+      "id": "pay_df9753394bc24030b5746576c4ef0c03",
+      "acceptance_ms": 17.98462499573361,
+      "ok": true,
+      "completion_ms": 21.752,
+      "client_observed_ms": 55.59612499928335,
+      "created_at": "2026-11-04T15:39:48.830896+00:00",
+      "completed_at": "2026-11-04T15:39:48.852648+00:00"
+    },
+    {
+      "index": 209,
+      "id": "pay_f3a1b925ed1a4b139a64e98be0194b72",
+      "acceptance_ms": 30.411708998144604,
+      "ok": true,
+      "completion_ms": 15.932000000000002,
+      "client_observed_ms": 51.78683399572037,
+      "created_at": "2026-11-04T15:39:48.844145+00:00",
+      "completed_at": "2026-11-04T15:39:48.860077+00:00"
+    },
+    {
+      "index": 210,
+      "id": "pay_3821e52f40dc4a2d9ff73bca5592913b",
+      "acceptance_ms": 16.895708002266474,
+      "ok": true,
+      "completion_ms": 17.439,
+      "client_observed_ms": 51.66212499898393,
+      "created_at": "2026-11-04T15:39:48.838871+00:00",
+      "completed_at": "2026-11-04T15:39:48.856310+00:00"
+    },
+    {
+      "index": 211,
+      "id": "pay_f5c949db5717430896a1d69dfddacc92",
+      "acceptance_ms": 25.115667005593423,
+      "ok": true,
+      "completion_ms": 10.065,
+      "client_observed_ms": 48.997375000908505,
+      "created_at": "2026-11-04T15:39:48.857658+00:00",
+      "completed_at": "2026-11-04T15:39:48.867723+00:00"
+    },
+    {
+      "index": 212,
+      "id": "pay_d17f9a5209554b62a4326695b3903693",
+      "acceptance_ms": 26.53899999859277,
+      "ok": true,
+      "completion_ms": 11.126999999999999,
+      "client_observed_ms": 55.93599999701837,
+      "created_at": "2026-11-04T15:39:48.860301+00:00",
+      "completed_at": "2026-11-04T15:39:48.871428+00:00"
+    },
+    {
+      "index": 213,
+      "id": "pay_f1d32f46a2204c11a362684e4a9cbecc",
+      "acceptance_ms": 23.59779200196499,
+      "ok": true,
+      "completion_ms": 12.052999999999999,
+      "client_observed_ms": 55.29012500483077,
+      "created_at": "2026-11-04T15:39:48.862706+00:00",
+      "completed_at": "2026-11-04T15:39:48.874759+00:00"
+    },
+    {
+      "index": 214,
+      "id": "pay_eb20d09109d74f6fb286600f8095ac5a",
+      "acceptance_ms": 35.51266599970404,
+      "ok": true,
+      "completion_ms": 15.827999999999998,
+      "client_observed_ms": 60.25220800074749,
+      "created_at": "2026-11-04T15:39:48.876205+00:00",
+      "completed_at": "2026-11-04T15:39:48.892033+00:00"
+    },
+    {
+      "index": 215,
+      "id": "pay_0df4da1d029f47fe8daceae21ce5207c",
+      "acceptance_ms": 20.421166998858098,
+      "ok": true,
+      "completion_ms": 11.524,
+      "client_observed_ms": 52.81875000218861,
+      "created_at": "2026-11-04T15:39:48.866490+00:00",
+      "completed_at": "2026-11-04T15:39:48.878014+00:00"
+    },
+    {
+      "index": 216,
+      "id": "pay_47974c9ee8134047845c6f80d3a98f4b",
+      "acceptance_ms": 22.313916000712197,
+      "ok": true,
+      "completion_ms": 12.579999999999998,
+      "client_observed_ms": 46.08566599927144,
+      "created_at": "2026-11-04T15:39:48.869175+00:00",
+      "completed_at": "2026-11-04T15:39:48.881755+00:00"
+    },
+    {
+      "index": 217,
+      "id": "pay_11b8cefea734450c8a7eb8a21b5ef559",
+      "acceptance_ms": 30.037833996175323,
+      "ok": true,
+      "completion_ms": 16.464,
+      "client_observed_ms": 64.60845899709966,
+      "created_at": "2026-11-04T15:39:48.878978+00:00",
+      "completed_at": "2026-11-04T15:39:48.895442+00:00"
+    },
+    {
+      "index": 218,
+      "id": "pay_3b9124bc36b54854916a493513111a6c",
+      "acceptance_ms": 61.97420899843564,
+      "ok": true,
+      "completion_ms": 7.975,
+      "client_observed_ms": 84.79016699857311,
+      "created_at": "2026-11-04T15:39:48.909065+00:00",
+      "completed_at": "2026-11-04T15:39:48.917040+00:00"
+    },
+    {
+      "index": 219,
+      "id": "pay_155196d336934ca19eb2e235794e904b",
+      "acceptance_ms": 22.27491699886741,
+      "ok": true,
+      "completion_ms": 11.943999999999999,
+      "client_observed_ms": 56.52362500404706,
+      "created_at": "2026-11-04T15:39:48.873393+00:00",
+      "completed_at": "2026-11-04T15:39:48.885337+00:00"
+    },
+    {
+      "index": 220,
+      "id": "pay_48e607ad09f34930972a10afcc0b6ed1",
+      "acceptance_ms": 22.373375002644025,
+      "ok": true,
+      "completion_ms": 14.768,
+      "client_observed_ms": 64.38583400449716,
+      "created_at": "2026-11-04T15:39:48.874013+00:00",
+      "completed_at": "2026-11-04T15:39:48.888781+00:00"
+    },
+    {
+      "index": 221,
+      "id": "pay_d5363199f083454f958aa0aea4848866",
+      "acceptance_ms": 46.54258300433867,
+      "ok": true,
+      "completion_ms": 6.891,
+      "client_observed_ms": 77.84704199730186,
+      "created_at": "2026-11-04T15:39:48.899287+00:00",
+      "completed_at": "2026-11-04T15:39:48.906178+00:00"
+    },
+    {
+      "index": 222,
+      "id": "pay_8e449b25b2c5403bb47b942d0cc331e6",
+      "acceptance_ms": 23.717500000202563,
+      "ok": true,
+      "completion_ms": 17.389000000000003,
+      "client_observed_ms": 57.42912499408703,
+      "created_at": "2026-11-04T15:39:48.881541+00:00",
+      "completed_at": "2026-11-04T15:39:48.898930+00:00"
+    },
+    {
+      "index": 223,
+      "id": "pay_b802f18c4639425c821d3df4e7b13d3d",
+      "acceptance_ms": 41.441707995545585,
+      "ok": true,
+      "completion_ms": 7.027,
+      "client_observed_ms": 65.27029100107029,
+      "created_at": "2026-11-04T15:39:48.902907+00:00",
+      "completed_at": "2026-11-04T15:39:48.909934+00:00"
+    },
+    {
+      "index": 224,
+      "id": "pay_0997fab358b14d67b22036b183e1314f",
+      "acceptance_ms": 25.306999996246304,
+      "ok": true,
+      "completion_ms": 11.497,
+      "client_observed_ms": 59.642791995429434,
+      "created_at": "2026-11-04T15:39:48.890905+00:00",
+      "completed_at": "2026-11-04T15:39:48.902402+00:00"
+    },
+    {
+      "index": 225,
+      "id": "pay_49bdae07948c44b28a32304ec8323c67",
+      "acceptance_ms": 42.97262500040233,
+      "ok": true,
+      "completion_ms": 10.942,
+      "client_observed_ms": 86.93558399681933,
+      "created_at": "2026-11-04T15:39:48.909832+00:00",
+      "completed_at": "2026-11-04T15:39:48.920774+00:00"
+    },
+    {
+      "index": 226,
+      "id": "pay_6370469290534049b1a9160b458d87a2",
+      "acceptance_ms": 27.22524999990128,
+      "ok": true,
+      "completion_ms": 9.897,
+      "client_observed_ms": 57.44362500263378,
+      "created_at": "2026-11-04T15:39:48.903747+00:00",
+      "completed_at": "2026-11-04T15:39:48.913644+00:00"
+    },
+    {
+      "index": 227,
+      "id": "pay_9c955fef16d041dead1b1ac01789af5f",
+      "acceptance_ms": 35.16245799983153,
+      "ok": true,
+      "completion_ms": 9.946,
+      "client_observed_ms": 87.78316699317656,
+      "created_at": "2026-11-04T15:39:48.918053+00:00",
+      "completed_at": "2026-11-04T15:39:48.927999+00:00"
+    },
+    {
+      "index": 228,
+      "id": "pay_d215bdae8f2142d8acbf96b172c65d90",
+      "acceptance_ms": 46.14562499773456,
+      "ok": true,
+      "completion_ms": 17.485,
+      "client_observed_ms": 69.99845799873583,
+      "created_at": "2026-11-04T15:39:48.931717+00:00",
+      "completed_at": "2026-11-04T15:39:48.949202+00:00"
+    },
+    {
+      "index": 229,
+      "id": "pay_b6c696a7e2a84ce39531e602a73a6225",
+      "acceptance_ms": 33.71795800194377,
+      "ok": true,
+      "completion_ms": 13.965,
+      "client_observed_ms": 94.58208300202386,
+      "created_at": "2026-11-04T15:39:48.921313+00:00",
+      "completed_at": "2026-11-04T15:39:48.935278+00:00"
+    },
+    {
+      "index": 230,
+      "id": "pay_a0f95f7b250a4fdda0271061874e06d1",
+      "acceptance_ms": 24.63270899897907,
+      "ok": true,
+      "completion_ms": 11.171999999999999,
+      "client_observed_ms": 54.59004199656192,
+      "created_at": "2026-11-04T15:39:48.912950+00:00",
+      "completed_at": "2026-11-04T15:39:48.924122+00:00"
+    },
+    {
+      "index": 231,
+      "id": "pay_3e07792123e748b9b21ca33ed79bc025",
+      "acceptance_ms": 27.063499997893814,
+      "ok": true,
+      "completion_ms": 11.282,
+      "client_observed_ms": 57.01641699852189,
+      "created_at": "2026-11-04T15:39:48.920327+00:00",
+      "completed_at": "2026-11-04T15:39:48.931609+00:00"
+    },
+    {
+      "index": 232,
+      "id": "pay_79d3b5ee4e9c4ef2942670fbea16713a",
+      "acceptance_ms": 48.49408299924107,
+      "ok": true,
+      "completion_ms": 17.79,
+      "client_observed_ms": 81.20666700415313,
+      "created_at": "2026-11-04T15:39:48.942505+00:00",
+      "completed_at": "2026-11-04T15:39:48.960295+00:00"
+    },
+    {
+      "index": 233,
+      "id": "pay_62a66a48c5094b2ab74d5513762ef1fa",
+      "acceptance_ms": 26.06933300558012,
+      "ok": true,
+      "completion_ms": 14.505,
+      "client_observed_ms": 50.2384580031503,
+      "created_at": "2026-11-04T15:39:48.924453+00:00",
+      "completed_at": "2026-11-04T15:39:48.938958+00:00"
+    },
+    {
+      "index": 234,
+      "id": "pay_f1b8366e08f34ed4b29eba4af2d0a9b5",
+      "acceptance_ms": 26.4936250023311,
+      "ok": true,
+      "completion_ms": 17.39,
+      "client_observed_ms": 64.66837500192923,
+      "created_at": "2026-11-04T15:39:48.924758+00:00",
+      "completed_at": "2026-11-04T15:39:48.942148+00:00"
+    },
+    {
+      "index": 235,
+      "id": "pay_c04c6ffaa1b24ff6a6f8bf573b92c8e4",
+      "acceptance_ms": 26.526708003075328,
+      "ok": true,
+      "completion_ms": 17.525,
+      "client_observed_ms": 49.82820800069021,
+      "created_at": "2026-11-04T15:39:48.928334+00:00",
+      "completed_at": "2026-11-04T15:39:48.945859+00:00"
+    },
+    {
+      "index": 236,
+      "id": "pay_f165009115f34cc1938b11f145fdb296",
+      "acceptance_ms": 37.34120799344964,
+      "ok": true,
+      "completion_ms": 18.988999999999997,
+      "client_observed_ms": 70.88491600006819,
+      "created_at": "2026-11-04T15:39:48.945214+00:00",
+      "completed_at": "2026-11-04T15:39:48.964203+00:00"
+    },
+    {
+      "index": 237,
+      "id": "pay_1489cb2b80ea4c82a975328d21835329",
+      "acceptance_ms": 29.930791002698243,
+      "ok": true,
+      "completion_ms": 16.459999999999997,
+      "client_observed_ms": 70.64145799813559,
+      "created_at": "2026-11-04T15:39:48.940255+00:00",
+      "completed_at": "2026-11-04T15:39:48.956715+00:00"
+    },
+    {
+      "index": 238,
+      "id": "pay_b859d92c23e1443d9dbbec81d99864f6",
+      "acceptance_ms": 22.802957995736506,
+      "ok": true,
+      "completion_ms": 16.729,
+      "client_observed_ms": 45.40404200088233,
+      "created_at": "2026-11-04T15:39:48.936507+00:00",
+      "completed_at": "2026-11-04T15:39:48.953236+00:00"
+    },
+    {
+      "index": 239,
+      "id": "pay_8938dcafeb3849d5bbb7c2bd2e89b7b7",
+      "acceptance_ms": 37.4014580011135,
+      "ok": true,
+      "completion_ms": 18.404,
+      "client_observed_ms": 76.2872499981313,
+      "created_at": "2026-11-04T15:39:48.953227+00:00",
+      "completed_at": "2026-11-04T15:39:48.971631+00:00"
+    },
+    {
+      "index": 240,
+      "id": "pay_cf9a8cbed4ac4f8aa96b41af8ed2b9c8",
+      "acceptance_ms": 44.63541699806228,
+      "ok": true,
+      "completion_ms": 17.765,
+      "client_observed_ms": 83.43462500488386,
+      "created_at": "2026-11-04T15:39:48.961268+00:00",
+      "completed_at": "2026-11-04T15:39:48.979033+00:00"
+    },
+    {
+      "index": 241,
+      "id": "pay_76a96385d5714588ae2e414d638e307e",
+      "acceptance_ms": 23.639625003852416,
+      "ok": true,
+      "completion_ms": 18.915000000000003,
+      "client_observed_ms": 62.61525000445545,
+      "created_at": "2026-11-04T15:39:48.948838+00:00",
+      "completed_at": "2026-11-04T15:39:48.967753+00:00"
+    },
+    {
+      "index": 242,
+      "id": "pay_48a2519502aa4c53824d1d40da47c7fb",
+      "acceptance_ms": 39.10541599907447,
+      "ok": true,
+      "completion_ms": 22.243,
+      "client_observed_ms": 77.49520800280152,
+      "created_at": "2026-11-04T15:39:48.968805+00:00",
+      "completed_at": "2026-11-04T15:39:48.991048+00:00"
+    },
+    {
+      "index": 243,
+      "id": "pay_a4a83d7c44be4d4aa8a36e34e90a3dde",
+      "acceptance_ms": 32.99908399640117,
+      "ok": true,
+      "completion_ms": 18.773000000000003,
+      "client_observed_ms": 56.742667002254166,
+      "created_at": "2026-11-04T15:39:48.964376+00:00",
+      "completed_at": "2026-11-04T15:39:48.983149+00:00"
+    },
+    {
+      "index": 244,
+      "id": "pay_769b0bf8a1d042d38c24362270a96243",
+      "acceptance_ms": 23.52904099825537,
+      "ok": true,
+      "completion_ms": 18.131999999999998,
+      "client_observed_ms": 49.20966599456733,
+      "created_at": "2026-11-04T15:39:48.957344+00:00",
+      "completed_at": "2026-11-04T15:39:48.975476+00:00"
+    },
+    {
+      "index": 245,
+      "id": "pay_3b2eec5c1c7f40878d4edfc4710e7984",
+      "acceptance_ms": 48.6049580067629,
+      "ok": true,
+      "completion_ms": 22.745,
+      "client_observed_ms": 93.159125004604,
+      "created_at": "2026-11-04T15:39:48.985216+00:00",
+      "completed_at": "2026-11-04T15:39:49.007961+00:00"
+    },
+    {
+      "index": 246,
+      "id": "pay_e32da5b783324908bdb68e48958d3d44",
+      "acceptance_ms": 23.899416999483947,
+      "ok": true,
+      "completion_ms": 21.21,
+      "client_observed_ms": 54.42699999548495,
+      "created_at": "2026-11-04T15:39:48.966091+00:00",
+      "completed_at": "2026-11-04T15:39:48.987301+00:00"
+    },
+    {
+      "index": 247,
+      "id": "pay_3f8aa4d64ab84d1f98cd40a9efa139ae",
+      "acceptance_ms": 24.723167000047397,
+      "ok": true,
+      "completion_ms": 22.776999999999997,
+      "client_observed_ms": 70.3079169979901,
+      "created_at": "2026-11-04T15:39:48.971630+00:00",
+      "completed_at": "2026-11-04T15:39:48.994407+00:00"
+    },
+    {
+      "index": 248,
+      "id": "pay_2ee40631d54f4a38b7480c73bb3d72e1",
+      "acceptance_ms": 24.46800000325311,
+      "ok": true,
+      "completion_ms": 23.487000000000002,
+      "client_observed_ms": 55.720459000440314,
+      "created_at": "2026-11-04T15:39:48.974069+00:00",
+      "completed_at": "2026-11-04T15:39:48.997556+00:00"
+    },
+    {
+      "index": 249,
+      "id": "pay_464bfd3e885c4b81b9d507fed32158ac",
+      "acceptance_ms": 39.27329200087115,
+      "ok": true,
+      "completion_ms": 22.974,
+      "client_observed_ms": 77.49116700142622,
+      "created_at": "2026-11-04T15:39:48.991884+00:00",
+      "completed_at": "2026-11-04T15:39:49.014858+00:00"
+    },
+    {
+      "index": 250,
+      "id": "pay_10b714eba8fd4da8b08de0da96c6c4f0",
+      "acceptance_ms": 23.964208994584624,
+      "ok": true,
+      "completion_ms": 22.166,
+      "client_observed_ms": 46.85229199822061,
+      "created_at": "2026-11-04T15:39:48.978522+00:00",
+      "completed_at": "2026-11-04T15:39:49.000688+00:00"
+    },
+    {
+      "index": 251,
+      "id": "pay_d5e9b14e3ae648eeb5bb5afef028967c",
+      "acceptance_ms": 46.760833996813744,
+      "ok": true,
+      "completion_ms": 18.384999999999998,
+      "client_observed_ms": 85.14874999673339,
+      "created_at": "2026-11-04T15:39:49.004140+00:00",
+      "completed_at": "2026-11-04T15:39:49.022525+00:00"
+    },
+    {
+      "index": 252,
+      "id": "pay_6228084a039a4ded9b355c6024818178",
+      "acceptance_ms": 26.72095800517127,
+      "ok": true,
+      "completion_ms": 19.819,
+      "client_observed_ms": 64.48879100207705,
+      "created_at": "2026-11-04T15:39:48.984523+00:00",
+      "completed_at": "2026-11-04T15:39:49.004342+00:00"
+    },
+    {
+      "index": 253,
+      "id": "pay_d76e9f4a0d8c464b82f4cf3ff38af61e",
+      "acceptance_ms": 24.853584000084084,
+      "ok": true,
+      "completion_ms": 23.907999999999998,
+      "client_observed_ms": 56.16212500171969,
+      "created_at": "2026-11-04T15:39:48.987254+00:00",
+      "completed_at": "2026-11-04T15:39:49.011162+00:00"
+    },
+    {
+      "index": 254,
+      "id": "pay_81ef8947f31e4f86bd5df2bd9da7c4ec",
+      "acceptance_ms": 24.238124999101274,
+      "ok": true,
+      "completion_ms": 22.790000000000003,
+      "client_observed_ms": 50.123041997721884,
+      "created_at": "2026-11-04T15:39:48.995946+00:00",
+      "completed_at": "2026-11-04T15:39:49.018736+00:00"
+    },
+    {
+      "index": 255,
+      "id": "pay_86ae0a59d95c452ea51bb171ea34a6c6",
+      "acceptance_ms": 38.052791001973674,
+      "ok": true,
+      "completion_ms": 23.168000000000003,
+      "client_observed_ms": 85.51979100593599,
+      "created_at": "2026-11-04T15:39:49.013625+00:00",
+      "completed_at": "2026-11-04T15:39:49.036793+00:00"
+    },
+    {
+      "index": 256,
+      "id": "pay_651f50a4c22949b88971454e2e1934f8",
+      "acceptance_ms": 30.690499996126164,
+      "ok": true,
+      "completion_ms": 17.537,
+      "client_observed_ms": 53.98720799712464,
+      "created_at": "2026-11-04T15:39:49.008473+00:00",
+      "completed_at": "2026-11-04T15:39:49.026010+00:00"
+    },
+    {
+      "index": 257,
+      "id": "pay_d60debe954164a10b248aba64063957d",
+      "acceptance_ms": 31.2769579977612,
+      "ok": true,
+      "completion_ms": 18.868,
+      "client_observed_ms": 54.5376669979305,
+      "created_at": "2026-11-04T15:39:49.010610+00:00",
+      "completed_at": "2026-11-04T15:39:49.029478+00:00"
+    },
+    {
+      "index": 258,
+      "id": "pay_9a4a1d5ffcd54a1fa1ca4663e3a0acff",
+      "acceptance_ms": 44.281249996856786,
+      "ok": true,
+      "completion_ms": 25.002,
+      "client_observed_ms": 83.10524999978952,
+      "created_at": "2026-11-04T15:39:49.025853+00:00",
+      "completed_at": "2026-11-04T15:39:49.050855+00:00"
+    },
+    {
+      "index": 259,
+      "id": "pay_58998999100b4922bab9adb38a5f6188",
+      "acceptance_ms": 29.85712500230875,
+      "ok": true,
+      "completion_ms": 19.877,
+      "client_observed_ms": 53.6857080005575,
+      "created_at": "2026-11-04T15:39:49.012837+00:00",
+      "completed_at": "2026-11-04T15:39:49.032714+00:00"
+    },
+    {
+      "index": 260,
+      "id": "pay_1a5ceffef7c2438bb350f600825b055c",
+      "acceptance_ms": 52.76395800319733,
+      "ok": true,
+      "completion_ms": 21.811,
+      "client_observed_ms": 106.1080409999704,
+      "created_at": "2026-11-04T15:39:49.040556+00:00",
+      "completed_at": "2026-11-04T15:39:49.062367+00:00"
+    },
+    {
+      "index": 261,
+      "id": "pay_73ffa211f3a34e72912d4e166c1e7771",
+      "acceptance_ms": 32.73712499503745,
+      "ok": true,
+      "completion_ms": 22.57,
+      "client_observed_ms": 56.043999997200444,
+      "created_at": "2026-11-04T15:39:49.021155+00:00",
+      "completed_at": "2026-11-04T15:39:49.043725+00:00"
+    },
+    {
+      "index": 262,
+      "id": "pay_1c751aa9165d438bb21b1ca38b7113d3",
+      "acceptance_ms": 23.85333299753256,
+      "ok": true,
+      "completion_ms": 24.828,
+      "client_observed_ms": 54.918832996918354,
+      "created_at": "2026-11-04T15:39:49.015548+00:00",
+      "completed_at": "2026-11-04T15:39:49.040376+00:00"
+    },
+    {
+      "index": 263,
+      "id": "pay_8851515af0184d7791c77234a1707739",
+      "acceptance_ms": 54.857249997439794,
+      "ok": true,
+      "completion_ms": 22.358,
+      "client_observed_ms": 99.57054199912818,
+      "created_at": "2026-11-04T15:39:49.051102+00:00",
+      "completed_at": "2026-11-04T15:39:49.073460+00:00"
+    },
+    {
+      "index": 264,
+      "id": "pay_b7995481c8ca49ceb7bd080396ed4511",
+      "acceptance_ms": 25.250374994357117,
+      "ok": true,
+      "completion_ms": 22.324,
+      "client_observed_ms": 57.22404099651612,
+      "created_at": "2026-11-04T15:39:49.025117+00:00",
+      "completed_at": "2026-11-04T15:39:49.047441+00:00"
+    },
+    {
+      "index": 265,
+      "id": "pay_b04165ab9c6c45fcbf6f15fb0d937355",
+      "acceptance_ms": 31.34887499618344,
+      "ok": true,
+      "completion_ms": 21.803,
+      "client_observed_ms": 65.48012499843026,
+      "created_at": "2026-11-04T15:39:49.033484+00:00",
+      "completed_at": "2026-11-04T15:39:49.055287+00:00"
+    },
+    {
+      "index": 266,
+      "id": "pay_0c7dc81bad224658b20ab92177612b2f",
+      "acceptance_ms": 38.89250000065658,
+      "ok": true,
+      "completion_ms": 21.506,
+      "client_observed_ms": 76.34249999682652,
+      "created_at": "2026-11-04T15:39:49.044464+00:00",
+      "completed_at": "2026-11-04T15:39:49.065970+00:00"
+    },
+    {
+      "index": 267,
+      "id": "pay_bc78cb9d1fa146899d90d70f6a4e7e04",
+      "acceptance_ms": 31.140166996920016,
+      "ok": true,
+      "completion_ms": 19.578000000000003,
+      "client_observed_ms": 63.45537499873899,
+      "created_at": "2026-11-04T15:39:49.038995+00:00",
+      "completed_at": "2026-11-04T15:39:49.058573+00:00"
+    },
+    {
+      "index": 268,
+      "id": "pay_8883b0705c9f4f1e8d733905fdfaed63",
+      "acceptance_ms": 32.4257089960156,
+      "ok": true,
+      "completion_ms": 21.541999999999998,
+      "client_observed_ms": 54.50108399963938,
+      "created_at": "2026-11-04T15:39:49.048731+00:00",
+      "completed_at": "2026-11-04T15:39:49.070273+00:00"
+    },
+    {
+      "index": 269,
+      "id": "pay_49e4e4310ef34eb1af63e32b3c7ab0ca",
+      "acceptance_ms": 46.41470800561365,
+      "ok": true,
+      "completion_ms": 31.531000000000002,
+      "client_observed_ms": 139.3872080006986,
+      "created_at": "2026-11-04T15:39:49.066308+00:00",
+      "completed_at": "2026-11-04T15:39:49.097839+00:00"
+    },
+    {
+      "index": 270,
+      "id": "pay_6619044618e34383be2027a4e0cd07c0",
+      "acceptance_ms": 32.184707997657824,
+      "ok": true,
+      "completion_ms": 27.519,
+      "client_observed_ms": 63.07487499725539,
+      "created_at": "2026-11-04T15:39:49.052355+00:00",
+      "completed_at": "2026-11-04T15:39:49.079874+00:00"
+    },
+    {
+      "index": 271,
+      "id": "pay_6fecdc6d7e2248bebb8863acad3ffbbc",
+      "acceptance_ms": 31.660958004067652,
+      "ok": true,
+      "completion_ms": 27.725,
+      "client_observed_ms": 110.48000000300817,
+      "created_at": "2026-11-04T15:39:49.055376+00:00",
+      "completed_at": "2026-11-04T15:39:49.083101+00:00"
+    },
+    {
+      "index": 272,
+      "id": "pay_72e683bab3634ab5a84be22f37ebe705",
+      "acceptance_ms": 24.054665998846758,
+      "ok": true,
+      "completion_ms": 24.511000000000003,
+      "client_observed_ms": 48.35591599839972,
+      "created_at": "2026-11-04T15:39:49.052172+00:00",
+      "completed_at": "2026-11-04T15:39:49.076683+00:00"
+    },
+    {
+      "index": 273,
+      "id": "pay_0496bc50084243ff9bf618d2e6a65260",
+      "acceptance_ms": 32.60483399935765,
+      "ok": true,
+      "completion_ms": 30.482,
+      "client_observed_ms": 137.2463340012473,
+      "created_at": "2026-11-04T15:39:49.063568+00:00",
+      "completed_at": "2026-11-04T15:39:49.094050+00:00"
+    },
+    {
+      "index": 274,
+      "id": "pay_f97abc6869df4ab3b4e33894ba1ed602",
+      "acceptance_ms": 28.233582997927442,
+      "ok": true,
+      "completion_ms": 28.223000000000003,
+      "client_observed_ms": 98.98920799605548,
+      "created_at": "2026-11-04T15:39:49.058888+00:00",
+      "completed_at": "2026-11-04T15:39:49.087111+00:00"
+    },
+    {
+      "index": 275,
+      "id": "pay_3a5fa3e56ace4f08a865196446e8c73b",
+      "acceptance_ms": 26.793875003932044,
+      "ok": true,
+      "completion_ms": 29.933999999999997,
+      "client_observed_ms": 57.62108300405089,
+      "created_at": "2026-11-04T15:39:49.060528+00:00",
+      "completed_at": "2026-11-04T15:39:49.090462+00:00"
+    },
+    {
+      "index": 276,
+      "id": "pay_2c0625994c6849d6bc5fe4bfca6f1cfc",
+      "acceptance_ms": 37.08116600319045,
+      "ok": true,
+      "completion_ms": 29.658,
+      "client_observed_ms": 119.09400000149617,
+      "created_at": "2026-11-04T15:39:49.075262+00:00",
+      "completed_at": "2026-11-04T15:39:49.104920+00:00"
+    },
+    {
+      "index": 277,
+      "id": "pay_505900f7a10a4d228db125d2bb0d23a6",
+      "acceptance_ms": 25.58291699824622,
+      "ok": true,
+      "completion_ms": 33.483,
+      "client_observed_ms": 66.34612500056392,
+      "created_at": "2026-11-04T15:39:49.068270+00:00",
+      "completed_at": "2026-11-04T15:39:49.101753+00:00"
+    },
+    {
+      "index": 278,
+      "id": "pay_e6364c3f5ff248eda933f85e610bc783",
+      "acceptance_ms": 63.61095800093608,
+      "ok": true,
+      "completion_ms": 34.216,
+      "client_observed_ms": 104.63066700322088,
+      "created_at": "2026-11-04T15:39:49.110204+00:00",
+      "completed_at": "2026-11-04T15:39:49.144420+00:00"
+    },
+    {
+      "index": 279,
+      "id": "pay_473512d497fb40748544d996de9a010a",
+      "acceptance_ms": 39.48800000216579,
+      "ok": true,
+      "completion_ms": 22.371,
+      "client_observed_ms": 65.9184579999419,
+      "created_at": "2026-11-04T15:39:49.085892+00:00",
+      "completed_at": "2026-11-04T15:39:49.108263+00:00"
+    },
+    {
+      "index": 280,
+      "id": "pay_c7c01cf45dd040adaad98447590a2ce6",
+      "acceptance_ms": 37.041167001007125,
+      "ok": true,
+      "completion_ms": 25.156000000000002,
+      "client_observed_ms": 70.41575000039302,
+      "created_at": "2026-11-04T15:39:49.094291+00:00",
+      "completed_at": "2026-11-04T15:39:49.119447+00:00"
+    },
+    {
+      "index": 281,
+      "id": "pay_c2eddd5e67dd4260ad18b2eb89802a75",
+      "acceptance_ms": 37.244625003950205,
+      "ok": true,
+      "completion_ms": 22.932000000000002,
+      "client_observed_ms": 64.34287500451319,
+      "created_at": "2026-11-04T15:39:49.100510+00:00",
+      "completed_at": "2026-11-04T15:39:49.123442+00:00"
+    },
+    {
+      "index": 282,
+      "id": "pay_37c09c35d1a14e52973c36e384902e3f",
+      "acceptance_ms": 25.124500003585126,
+      "ok": true,
+      "completion_ms": 23.659,
+      "client_observed_ms": 50.06445899925893,
+      "created_at": "2026-11-04T15:39:49.088427+00:00",
+      "completed_at": "2026-11-04T15:39:49.112086+00:00"
+    },
+    {
+      "index": 283,
+      "id": "pay_440cb079a41b4f74b3933d4a2239d1a7",
+      "acceptance_ms": 24.22645800106693,
+      "ok": true,
+      "completion_ms": 24.517,
+      "client_observed_ms": 48.52279099577572,
+      "created_at": "2026-11-04T15:39:49.090782+00:00",
+      "completed_at": "2026-11-04T15:39:49.115299+00:00"
+    },
+    {
+      "index": 284,
+      "id": "pay_f25cc3926d1c4074805c1403d35de647",
+      "acceptance_ms": 35.74612500233343,
+      "ok": true,
+      "completion_ms": 31.732000000000003,
+      "client_observed_ms": 104.41608400287805,
+      "created_at": "2026-11-04T15:39:49.108629+00:00",
+      "completed_at": "2026-11-04T15:39:49.140361+00:00"
+    },
+    {
+      "index": 285,
+      "id": "pay_ef72b71c63964ad788338dc0d3f41cbb",
+      "acceptance_ms": 29.75295900250785,
+      "ok": true,
+      "completion_ms": 27.587,
+      "client_observed_ms": 65.51929200213635,
+      "created_at": "2026-11-04T15:39:49.104434+00:00",
+      "completed_at": "2026-11-04T15:39:49.132021+00:00"
+    },
+    {
+      "index": 286,
+      "id": "pay_97057c582b72460d9cafc163f4755e34",
+      "acceptance_ms": 23.090666996722575,
+      "ok": true,
+      "completion_ms": 25.822000000000003,
+      "client_observed_ms": 51.724083998124115,
+      "created_at": "2026-11-04T15:39:49.102116+00:00",
+      "completed_at": "2026-11-04T15:39:49.127938+00:00"
+    },
+    {
+      "index": 287,
+      "id": "pay_17e7f51ebeb5432691c3fa88cef95a2f",
+      "acceptance_ms": 22.224792002816685,
+      "ok": true,
+      "completion_ms": 30.071,
+      "client_observed_ms": 86.48366700072074,
+      "created_at": "2026-11-04T15:39:49.106115+00:00",
+      "completed_at": "2026-11-04T15:39:49.136186+00:00"
+    },
+    {
+      "index": 288,
+      "id": "pay_daf69d9fc1dd476bb2448ede7430efdf",
+      "acceptance_ms": 33.641709000221454,
+      "ok": true,
+      "completion_ms": 32.056000000000004,
+      "client_observed_ms": 102.54654200252844,
+      "created_at": "2026-11-04T15:39:49.117585+00:00",
+      "completed_at": "2026-11-04T15:39:49.149641+00:00"
+    },
+    {
+      "index": 289,
+      "id": "pay_f76d816c679b4d95b2ccf7e334ddfacb",
+      "acceptance_ms": 25.59741699951701,
+      "ok": true,
+      "completion_ms": 36.658,
+      "client_observed_ms": 93.27170799952,
+      "created_at": "2026-11-04T15:39:49.118678+00:00",
+      "completed_at": "2026-11-04T15:39:49.155336+00:00"
+    },
+    {
+      "index": 290,
+      "id": "pay_ca7f8730d226425aa345370db12f372f",
+      "acceptance_ms": 26.15370800049277,
+      "ok": true,
+      "completion_ms": 38.171,
+      "client_observed_ms": 88.81579100125236,
+      "created_at": "2026-11-04T15:39:49.121317+00:00",
+      "completed_at": "2026-11-04T15:39:49.159488+00:00"
+    },
+    {
+      "index": 291,
+      "id": "pay_76ce795f2d37411397eb886223159169",
+      "acceptance_ms": 26.70054200279992,
+      "ok": true,
+      "completion_ms": 40.444,
+      "client_observed_ms": 91.82400000281632,
+      "created_at": "2026-11-04T15:39:49.122928+00:00",
+      "completed_at": "2026-11-04T15:39:49.163372+00:00"
+    },
+    {
+      "index": 292,
+      "id": "pay_9eb0bcc50774423aaa434057f3ae777a",
+      "acceptance_ms": 31.708208000054583,
+      "ok": true,
+      "completion_ms": 31.648000000000003,
+      "client_observed_ms": 80.74066600238439,
+      "created_at": "2026-11-04T15:39:49.140161+00:00",
+      "completed_at": "2026-11-04T15:39:49.171809+00:00"
+    },
+    {
+      "index": 293,
+      "id": "pay_01fa0a079c664ad2b788a181e1129fb3",
+      "acceptance_ms": 24.025166996580083,
+      "ok": true,
+      "completion_ms": 30.99,
+      "client_observed_ms": 59.03408299491275,
+      "created_at": "2026-11-04T15:39:49.136444+00:00",
+      "completed_at": "2026-11-04T15:39:49.167434+00:00"
+    },
+    {
+      "index": 294,
+      "id": "pay_e17dad3f21244e2a851e55787714964b",
+      "acceptance_ms": 33.78816699841991,
+      "ok": true,
+      "completion_ms": 31.591,
+      "client_observed_ms": 87.98333300364902,
+      "created_at": "2026-11-04T15:39:49.145069+00:00",
+      "completed_at": "2026-11-04T15:39:49.176660+00:00"
+    },
+    {
+      "index": 295,
+      "id": "pay_cb1de8f71b6644609aecf3dd782320b9",
+      "acceptance_ms": 45.56195800250862,
+      "ok": true,
+      "completion_ms": 22.552,
+      "client_observed_ms": 93.66016599960858,
+      "created_at": "2026-11-04T15:39:49.163057+00:00",
+      "completed_at": "2026-11-04T15:39:49.185609+00:00"
+    },
+    {
+      "index": 296,
+      "id": "pay_8e44e866156547978f33ac9eb42f7ffa",
+      "acceptance_ms": 48.98545800097054,
+      "ok": true,
+      "completion_ms": 18.881,
+      "client_observed_ms": 90.07554200070444,
+      "created_at": "2026-11-04T15:39:49.178838+00:00",
+      "completed_at": "2026-11-04T15:39:49.197719+00:00"
+    },
+    {
+      "index": 297,
+      "id": "pay_e2e4acb9f6c242339973b83c503b45d2",
+      "acceptance_ms": 25.528833000862505,
+      "ok": true,
+      "completion_ms": 27.715,
+      "client_observed_ms": 75.40570799756097,
+      "created_at": "2026-11-04T15:39:49.153448+00:00",
+      "completed_at": "2026-11-04T15:39:49.181163+00:00"
+    },
+    {
+      "index": 298,
+      "id": "pay_e883097763454e778b438875da8a4b4b",
+      "acceptance_ms": 34.88262499740813,
+      "ok": true,
+      "completion_ms": 22.834,
+      "client_observed_ms": 82.46779199544108,
+      "created_at": "2026-11-04T15:39:49.166589+00:00",
+      "completed_at": "2026-11-04T15:39:49.189423+00:00"
+    },
+    {
+      "index": 299,
+      "id": "pay_9da35ca43c304871a766c4006011d9cb",
+      "acceptance_ms": 35.599625000031665,
+      "ok": true,
+      "completion_ms": 25.179,
+      "client_observed_ms": 77.13350000267383,
+      "created_at": "2026-11-04T15:39:49.168595+00:00",
+      "completed_at": "2026-11-04T15:39:49.193774+00:00"
+    }
+  ]
+}

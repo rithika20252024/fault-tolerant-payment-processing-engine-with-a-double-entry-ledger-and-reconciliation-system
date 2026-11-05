@@ -1,0 +1,26 @@
+{
+  "started_at": "2026-11-04T15:41:48.611841+00:00",
+  "host": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "docker": {
+    "ServerVersion": "29.8.0",
+    "NCPU": 10,
+    "MemTotal": 8319504384,
+    "Architecture": "aarch64",
+    "OperatingSystem": "Docker Desktop"
+  },
+  "source_sha256": {
+    "payments/__init__.py": "1cf5635b5520f94b371c6aae0e27ca503d76c9ce6d8d3367471690cef9ac33f9",
+    "payments/api.py": "5edfc017b6cbbab887a1ec5e0744db87b7d2efb534bf8314d952d0ef20a7b071",
+    "payments/db.py": "e19ffbf5cbfcd34e056b43671003bdd1e992e187de37c6f814ad29c203dc3c4a",
+    "payments/engine.py": "7567dda236831b62e85e905e023a2c403caf0176b91b3b479f345303d63d69cb",
+    "payments/migrate.py": "7c45d98622368488b061f7e93d1cd62c5e30d924ae050a94fda6905e95b4770e",
+    "payments/providers.py": "544b9a070256a7ba52543bb712a22c336956222d0d53212f1174cfbd1e201496",
+    "payments/schema.sql": "47c7fb9b172184c65b2ba8b07fa4fa6582c4e1f0b362d8214a1390fc3ed37abf",
+    "payments/worker.py": "3be6f097f6020a4925f45c72dce74cb4530fbb99b729ea53e0e40e8f757fe26c"
+  },
+  "runtime_versions": {
+    "api": "Python 3.13.18",
+    "database": "postgres (PostgreSQL) 17.11",
+    "k6": "2.3.0"
+  }
+}
